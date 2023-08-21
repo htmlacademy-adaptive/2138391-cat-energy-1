@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Павел Кондратьев](https://up.htmlacademy.ru/adaptive-individual/1/user/2138391).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Устименко] (https://htmlacademy.ru/profile/spiritmoon).
 
 ---
 
