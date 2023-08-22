@@ -18,76 +18,127 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="navigation__list">
-            <li class="navigation__item navigation__item--current">
-              <a class="navigation__link">Главная</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Подбор программы</a>
+              <a class="navigation__link navigation__item--current">Подбор программы</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="page-content">
-      <section class="hero">
+      <section class="programm-request">
         <div class="container">
-          <h1 class="hero__title">Функциональное питание для котов</h1>
-          <p class="hero__subtitle">Занялся собой? Займись котом!</p>
-          <img class="hero__image" src="img/hero-image.png" alt="Упаковка Cat Energy с курицей">
-          <a class="hero__button button" href="form.html">Подобрать программу</a>
-        </div>
-      </section>
-      <section class="programm">
-        <div class="container">
-          <h2 class="visually-hidden">Программы питания</h2>
-          <ul class="programm__list">
-            <li class="programm__item">
-              <article class="programm-card programm-card--diet">
-                <h3 class="programm-card__title">Похудение</h3>
-                <p class="programm-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <a class="programm-card__link" href="catalog.html#energy-slim">Каталог slim</a>
-              </article>
-            </li>
-            <li class="programm__item">
-              <article class="programm-card programm-card--weight">
-                <h3 class="programm-card__title">Набор массы</h3>
-                <p class="programm-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                <a class="programm-card__link" href="catalog.html#energy-pro">Каталог pro</a>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="features">
-        <div class="container">
-          <h2 class="features__title">Как это работает</h2>
-          <ul class="features__list">
-            <li class="features__item features__item--healthy">Функциональное питание содержит только полезные питательные вещества.</li>
-            <li class="features__item features__item--easy">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-            <li class="features__item features__item--replace">Замените один-два приема обычной еды на наше функциональное питание.</li>
-            <li class="features__item features__item--result">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
-          </ul>
-        </div>
-      </section>
-      <section class="example">
-        <div class="container">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <dl class="example__stats-list">
-            <div class="example__stats-item">
-              <dt class="example__stats-summ">5 кг</dt>
-              <dd class="example__stats-description">снижение веса</dd>
-            </div>
-            <div class="example__stats-item">
-              <dt class="example__stats-summ">60 дней</dt>
-              <dd class="example__stats-description">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="example__total">Затраты на питание: 15 000 РУБ.</p>
-          <!-- тут будет слайдер -->
+          <h1 class="programm-request__title">Подбор программы</h1>
+          <p class="programm-request__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <form class="programm-request__form request-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="request-form__group">
+              <legend class="visually-hidden">Персональные данные</legend>
+              <ul class="request-form__list">
+                <li class="request-form__list-item">
+                  <label class="request-form__field form-field">
+                    <span class="form-field__label">Имя:<sup>*</sup> </span>
+                    <input class="form-field__control input" type="text" name="request-form-name" placeholder="Барсик" required>
+                  </label>
+                </li>
+                <li class="request-form__list-item">
+                  <label class="request-form__field form-field">
+                    <span class="form-field__label">Вес (кг):<sup>*</sup> </span>
+                    <input class="form-field__control input" type="number" name="request-form-weight" placeholder="7" min="3" max="100" required>
+                  </label>
+                </li>
+                <li class="request-form__list-item">
+                  <label class="request-form__field form-field">
+                    <span class="form-field__label">Возраст (лет):</span>
+                    <input class="form-field__control input" type="number" name="request-form-age" placeholder="7" min="0" max="30">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="request-form__group">
+              <legend class="visually-hidden">Ваша цель</legend>
+              <ul class="request-form__list">
+                <li class="request-form__list-item">
+                  <label class="request-form__field form-field">
+                    <input class="form-field__control radio" type="radio" name="request-form-target" value="lose-weight" checked>
+                    <span class="form-field__label">Похудение</span>
+                  </label>
+                </li>
+                <li class="request-form__list-item">
+                  <label class="request-form__field form-field">
+                    <input class="form-field__control radio" type="radio" name="request-form-target" value="get-weight">
+                    <span class="form-field__label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="request-form__list-item">
+                  <label class="request-form__field form-field">
+                    <input class="form-field__control radio" type="radio" name="request-form-target" value="unknown">
+                    <span class="form-field__label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name">Контактные данные <br> (владельца кота)</legend>
+              <ul class="request-form__list">
+                <li class="request-form__list-item">
+                  <label class="request-form__field form-field">
+                    <span class="form-field__label">E-mail:<sup>*</sup></span>
+                    <input class="form-field__control input" type="email" name="request-form-mail" placeholder="kuklachev@gmail.com" required>
+                  </label>
+                </li>
+                <li class="request-form__list-item">
+                  <label class="request-form__field form-field">
+                    <span class="form-field__label">Телефон:<sup>*</sup></span>
+                    <input class="form-field__control input" type="tel" name="request-form-phone" placeholder="8 (960) 900-60-90" required>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name">Комментарий</legend>
+              <label class="request-form__field form-field">
+                <span class="visually-hidden">Поле для комментария</span>
+                <textarea class="form-field__control textarea" name="request-form-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </label>
+            </fieldset>
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name">Дополнительно</legend>
+              <ul class="request-form__list">
+                <li class="request-form__list-item">
+                  <label class="request-form__field form-field">
+                    <input class="form-field__control checkbox" type="checkbox" name="request-form-extra-sweetener" checked>
+                    <span class="form-field__label">сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="request-form__list-item">
+                  <label class="request-form__field form-field">
+                    <input class="form-field__control checkbox" type="checkbox" name="request-form-extra-water">
+                    <span class="form-field__label">питьевая вода</span>
+                  </label>
+                </li>
+                <li class="request-form__list-item">
+                  <label class="request-form__field form-field">
+                    <input class="form-field__control checkbox" type="checkbox" name="request-form-extra-milk">
+                    <span class="form-field__label">молоко</span>
+                  </label>
+                </li>
+                <li class="request-form__list-item">
+                  <label class="request-form__field form-field">
+                    <input class="form-field__control checkbox" type="checkbox" name="request-form-extra-vitamins">
+                    <span class="form-field__label">витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="request-form__button button button-primary" type="submit">Отправить заявку</button>
+            <p class="request-form__required-fields-info"><sup>*</sup> — Обязательные поля</p>
+          </form>
         </div>
       </section>
       <section class="contacts">
@@ -103,7 +154,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="footer__logo">
+        <a class="footer__logo" href="index.html">
           <img class="footer__logo-image" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
         </a>
         <div class="footer_social social">
