@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="header">
       <div class="container">
         <a class="header__logo">
           <img class="header__logo-image" src="img/logo-image.svg" width="33" height="38" alt="Логотип супер кот.">
-          <img class="header__logo-image" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
+          <img class="header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
         </a>
         <nav class="navigation">
           <button class="navigation__toggle" type="button">
@@ -31,6 +31,7 @@
         </nav>
       </div>
     </header>
+
     <main class="page-content">
       <section class="programm-request">
         <div class="container">
@@ -42,13 +43,13 @@
               <ul class="request-form__list">
                 <li class="request-form__list-item">
                   <label class="request-form__field form-field">
-                    <span class="form-field__label">Имя:<sup>*</sup> </span>
+                    <span class="form-field__label">Имя:<sup>*</sup></span>
                     <input class="form-field__control input" type="text" name="request-form-name" placeholder="Барсик" required>
                   </label>
                 </li>
                 <li class="request-form__list-item">
                   <label class="request-form__field form-field">
-                    <span class="form-field__label">Вес (кг):<sup>*</sup> </span>
+                    <span class="form-field__label">Вес (кг):<sup>*</sup></span>
                     <input class="form-field__control input" type="number" name="request-form-weight" placeholder="7" min="3" max="100" required>
                   </label>
                 </li>
@@ -136,29 +137,30 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="request-form__button button button-primary" type="submit">Отправить заявку</button>
-            <p class="request-form__required-fields-info"><sup>*</sup> — Обязательные поля</p>
+            <button class="request-form__button button button--primary" type="submit">Отправить заявку</button>
+            <div class="request-form__required-fields-info"><sup>*</sup> — Обязательные поля</div>
           </form>
         </div>
       </section>
+
       <section class="contacts">
         <div class="container">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper">
-            <p class="contacts__offer">Приглашаем к сотрудничеству дилеров!</p>
+            <div class="contacts__offer">Приглашаем к сотрудничеству дилеров!</div>
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </div>
           <img class="contacts__map" src="img/map.png" width="320" height="362" alt="Мы на карте">
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <a class="footer__logo" href="index.html">
           <img class="footer__logo-image" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
         </a>
         <div class="footer_social social">
-          <p class="visually-hidden">Мы в сети</p>
           <ul class="social__list">
             <li class="social__list-item">
               <a class="social__list-link" href="https://vk.com/htmlacademy" target="_blank">
