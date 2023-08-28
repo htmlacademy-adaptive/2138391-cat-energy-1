@@ -8,17 +8,45 @@
   align-items: center;
 }
 
-.footer__partner-logo {
-  width: 280px;
+.footer__logo {
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $basic-grey-100;
+  --icon-fill: #111111;
+  &::before {
+    content: "";
+    display: block;
+    width: 128px;
+    height: 24px;
+    mask: url("../../img/footer-logo.svg") no-repeat center / contain;
+    background: var(--icon-fill);
+  }
+  &:hover {
+    --icon-fill: #3E3E3E;
+  }
+  &:active {
+    --icon-fill: #6B6B6B;
+  }
+}
+
+.footer__social {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $basic-grey-100;
 }
 
 .footer__partner-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
   --icon-fill: #666666;
   &::before {
-    content:"HTML Academy";
+    content: "HTML Academy";
     font-size: 16px;
     line-height: 20px;
     color: $base-text-color;
