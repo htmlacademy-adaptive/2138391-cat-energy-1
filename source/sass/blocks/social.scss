@@ -26,7 +26,7 @@
     --icon-fill: #68B738;
   }
   &:active {
-    --icon-fill: rgba(104, 183, 56, 0.3);
+    opacity: 0.3;
   }
   &--vk {
     mask: url("../../img/vk-icon.svg") no-repeat center / contain;
