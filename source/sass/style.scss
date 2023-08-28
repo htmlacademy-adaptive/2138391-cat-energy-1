@@ -1,6 +1,19 @@
+
+// Переменные и миксины
+@import "./variables.scss";
+@import "./mixins.scss";
+
+//Общие стили
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 @import "./common/visually-hidden.scss";
 @import "./common/container.scss";
-@import "./common/list-reset.scss";
-@import "./common/variables.scss";
-@import "./blocks/page-body.scsc";
+@import "./common/menu-close.scss";
+
+// Блоки
+@import "./blocks/page-body.scss";
+@import "./blocks/header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+

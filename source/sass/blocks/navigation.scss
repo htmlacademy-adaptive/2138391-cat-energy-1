@@ -1,0 +1,46 @@
+.navigation {}
+
+.navigation__toggle {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/burger.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation__list {
+  @include list-reset;
+  position: absolute;
+  width: 320px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: $base-bg-color;
+}
+
+.navigation__item {
+  padding: 22px 55px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $basic-grey-200;
+  border-bottom: 1px solid $basic-grey-200;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.navigation__link {
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 20px;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+  &[href]:hover {
+    opacity: 0.6;
+  }
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
