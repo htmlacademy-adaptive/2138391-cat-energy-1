@@ -12,3 +12,29 @@
     margin-right: 0;
   }
 }
+
+.social__list-link {
+  --icon-fill: #666666;
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    background: var(--icon-fill);
+  }
+  &:hover {
+    --icon-fill: #68B738;
+  }
+  &:active {
+    --icon-fill: rgba(104, 183, 56, 0.3);
+  }
+  &--vk {
+    mask: url("../../img/vk-icon.svg") no-repeat center / contain;
+  }
+  &--youtube {
+    mask: url("../../img/youtube-icon.svg") no-repeat center / contain;
+  }
+  &--telegram {
+    mask: url("../../img/telegram-icon.svg") no-repeat center / contain;
+  }
+}
