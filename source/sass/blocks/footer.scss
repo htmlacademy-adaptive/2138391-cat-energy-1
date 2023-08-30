@@ -16,6 +16,7 @@
   margin-bottom: 20px;
   border-bottom: 1px solid $basic-grey-100;
   --icon-fill: #111111;
+
   &::before {
     content: "";
     display: block;
@@ -24,9 +25,11 @@
     mask: url("../../img/footer-logo.svg") no-repeat center / contain;
     background: var(--icon-fill);
   }
+
   &[href]:hover {
     --icon-fill: #3E3E3E;
   }
+
   &[href]:active {
     --icon-fill: #6B6B6B;
   }
@@ -45,12 +48,14 @@
   align-items: center;
   justify-content: space-between;
   --icon-fill: #666666;
+
   &::before {
     content: "HTML Academy";
     font-size: 16px;
     line-height: 20px;
     color: $base-text-color;
   }
+
   &::after {
     content: "";
     display: block;
@@ -59,11 +64,12 @@
     mask: url("../../img/academy-logo.svg") no-repeat center / contain;
     background: var(--icon-fill);
   }
+
   &:hover {
     --icon-fill: #68B738;
   }
+
   &:active {
     opacity: 0.3;
   }
 }
-

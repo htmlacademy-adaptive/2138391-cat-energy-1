@@ -12,9 +12,11 @@
 .header__logo {
   display: flex;
   align-items: center;
+
   &[href]:hover {
     opacity: 0.8;
   }
+
   &[href]:active {
     opacity: 0.6;
   }
