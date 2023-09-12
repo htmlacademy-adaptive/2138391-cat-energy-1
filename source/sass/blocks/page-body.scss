@@ -1,9 +1,5 @@
 .page-body {
-  font-family: "Lato";
-  font-size: 14px;
-  line-height: 18px;
-  font-style: normal;
-  font-weight: 400;
-  background-color: $base-bg-color;
-  color: $base-text-color;
+  font: $font-basic;
+  background-color: $color-background-1;
+  color: $color-text-primary;
 }

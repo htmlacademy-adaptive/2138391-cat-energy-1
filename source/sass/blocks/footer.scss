@@ -14,8 +14,7 @@
   justify-content: center;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid $basic-grey-100;
-  --icon-fill: #111111;
+  border-bottom: 1px solid $color-border-2;
 
   &::before {
     content: "";
@@ -23,15 +22,15 @@
     width: 128px;
     height: 24px;
     mask: url("../../img/footer-logo.svg") no-repeat center / contain;
-    background: var(--icon-fill);
+    background: $color-footer-logo-clickable;
   }
 
-  &[href]:hover {
-    --icon-fill: #3E3E3E;
+  &:hover::before {
+    background: $color-footer-logo-hover;
   }
 
-  &[href]:active {
-    --icon-fill: #6B6B6B;
+  &:active::before {
+    background: $color-footer-logo-pressed;
   }
 }
 
@@ -39,7 +38,7 @@
   width: 100%;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid $basic-grey-100;
+  border-bottom: 1px solid $color-border-2;
 }
 
 .footer__partner-logo {
@@ -47,13 +46,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  --icon-fill: #666666;
 
   &::before {
     content: "HTML Academy";
     font-size: 16px;
     line-height: 20px;
-    color: $base-text-color;
+    color: $color-text-primary;
   }
 
   &::after {
@@ -62,11 +60,11 @@
     width: 27px;
     height: 34px;
     mask: url("../../img/academy-logo.svg") no-repeat center / contain;
-    background: var(--icon-fill);
+    background: $color-partner-logo-clickable;
   }
 
-  &:hover {
-    --icon-fill: #68B738;
+  &:hover::after {
+    background: $color-partner-logo-hover;
   }
 
   &:active {

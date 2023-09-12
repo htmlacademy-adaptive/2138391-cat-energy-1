@@ -15,19 +15,19 @@
   top: 100%;
   left: 50%;
   transform: translate(-50%, 0);
-  background-color: $base-bg-color;
-}
+  background-color: $color-background-1;
 
-.navigation__list--closed {
-  display: none;
+  &--closed {
+    display: none;
+  }
 }
 
 .navigation__item {
   padding: 22px 55px;
   display: flex;
   justify-content: center;
-  border-top: 1px solid $basic-grey-200;
-  border-bottom: 1px solid $basic-grey-200;
+  border-top: 1px solid $color-border-1;
+  border-bottom: 1px solid $color-border-1;
 
   &:last-child {
     border-bottom: none;
@@ -38,7 +38,7 @@
   font-family: "Oswald";
   font-size: 20px;
   line-height: 20px;
-  color: $secondary-text-color;
+  color: $color-text-secondary;
   text-transform: uppercase;
 
   &[href]:hover {

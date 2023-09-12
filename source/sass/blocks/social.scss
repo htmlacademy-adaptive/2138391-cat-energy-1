@@ -13,18 +13,16 @@
 }
 
 .social__list-link {
-  --icon-fill: #666666;
-
   &::before {
     content: "";
     display: block;
     width: 28px;
     height: 22px;
-    background: var(--icon-fill);
+    background: $color-social-link-clickable;
   }
 
-  &:hover {
-    --icon-fill: #68B738;
+  &:hover::before {
+    background: $color-social-link-hover;
   }
 
   &:active {
