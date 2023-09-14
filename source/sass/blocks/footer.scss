@@ -1,0 +1,73 @@
+.footer {
+  padding: 40px 20px;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $color-border-2;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 128px;
+    height: 24px;
+    mask: url("../../img/footer-logo.svg") no-repeat center / contain;
+    background: $color-footer-logo-clickable;
+  }
+
+  &:hover::before {
+    background: $color-footer-logo-hover;
+  }
+
+  &:active::before {
+    background: $color-footer-logo-pressed;
+  }
+}
+
+.footer__social {
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $color-border-2;
+}
+
+.footer__partner-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::before {
+    content: "HTML Academy";
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-text-primary;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    mask: url("../../img/academy-logo.svg") no-repeat center / contain;
+    background: $color-partner-logo-clickable;
+  }
+
+  &:hover::after {
+    background: $color-partner-logo-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

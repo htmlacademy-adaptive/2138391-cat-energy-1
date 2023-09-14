@@ -1,1 +1,15 @@
-// Начните писать стили здесь
+
+// Переменные и миксины
+@import "./variables.scss";
+@import "./mixins.scss";
+
+//Общие стили
+@import "./fonts.scss";
+@import "./common.scss";
+
+// Блоки
+@import "./blocks/page-body.scss";
+@import "./blocks/header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
