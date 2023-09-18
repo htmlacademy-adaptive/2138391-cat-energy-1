@@ -1,0 +1,32 @@
+.hero {
+  font-family: "Oswald", sans-serif;
+  padding: 27px 35px 20px;
+  text-align: center;
+  background-color: $color-background-2;
+  color: $color-text-tertiary;
+  background: url("../../img/hero-bg.png") top no-repeat;
+}
+
+.hero__title {
+  font: $font-main-heading;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.hero__subtitle {
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+
+.hero__image {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.hero__button {
+  display: block;
+  width: 100%;
+}
+
