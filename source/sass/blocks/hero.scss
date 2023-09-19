@@ -1,6 +1,6 @@
 .hero {
   font-family: "Oswald", sans-serif;
-  padding: 27px 35px 20px;
+  padding: 27px 0 20px;
   text-align: center;
   background-color: $color-background-2;
   color: $color-text-tertiary;
@@ -28,5 +28,7 @@
 .hero__button {
   display: block;
   width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
