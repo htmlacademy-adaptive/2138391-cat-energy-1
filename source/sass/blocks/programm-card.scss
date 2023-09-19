@@ -1,0 +1,18 @@
+.programm-card__title {
+  font: $font-title-medium;
+  color: $color-text-secondary;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.programm-card__description {
+  margin-bottom: 40px;
+}
+
+.programm-card__link {
+  font: $font-link-basic;
+  color: $color-text-secondary;
+  text-transform: uppercase;
+}
