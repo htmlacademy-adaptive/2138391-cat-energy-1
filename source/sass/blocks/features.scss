@@ -1,0 +1,22 @@
+.features {
+  padding-bottom: 49px;
+}
+
+.features__title {
+  font: $font-title-mobile-large;
+  color: $color-text-secondary;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__item {
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
