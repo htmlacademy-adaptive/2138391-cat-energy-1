@@ -1,24 +1,80 @@
+.navigation {
+  position: absolute;
+  width: 320px;
+  left: 0;
+  top: 100%;
+}
+
 .navigation__toggle {
+  position: absolute;
+  top: -30%;
+  transform: translate(0, 50%);
+  right: 20px;
   padding: 0;
   border: none;
   background-color: transparent;
   width: 24px;
   height: 24px;
-  background-image: url("../../img/burger.svg");
-  background-repeat: no-repeat;
 }
 
 .navigation__list {
   @include list-reset;
-  position: absolute;
-  width: 320px;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background-color: $color-background-1;
+}
 
-  &--closed {
-    display: none;
+.navigation--opened .navigation__toggle {
+  &::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    mask: url("../../img/icon-nav-opened.svg") no-repeat center / contain;
+    background: $color-navigation-toggle-clickable;
+  }
+
+  &:hover::before {
+    background: $color-navigation-toggle-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.navigation--nojs {
+  position: static;
+  width: 280px;
+}
+
+.navigation--nojs .navigation__list {
+  width: 320px;
+  margin-top: 15px;
+  margin-left: -20px;
+}
+
+.navigation--closed {
+  min-height: 197px;
+}
+
+.navigation--closed .navigation__list {
+  display: none;
+}
+
+.navigation--closed .navigation__toggle {
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    mask: url("../../img/burger.svg") no-repeat center / contain;
+    background: $color-navigation-toggle-clickable;
+  }
+
+  &:hover::before {
+    background: $color-navigation-toggle-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -28,6 +84,7 @@
   justify-content: center;
   border-top: 1px solid $color-border-1;
   border-bottom: 1px solid $color-border-1;
+  background-color: $color-background-1;
 
   &:last-child {
     border-bottom: none;
