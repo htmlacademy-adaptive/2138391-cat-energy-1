@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/2138391-cat-energy-1/4/">
+</head>
+  <body class="page-body">
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__logo">
+          <img class="header__logo-image" src="img/logo-image.svg" width="33" height="38" alt="Логотип супер кот.">
+          <img class="header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
+        </a>
+        <nav class="navigation navigation--opened navigation--nojs">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--current">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <section class="hero">
+        <div class="container hero__container">
+          <h1 class="hero__title">Функциональное питание для котов</h1>
+          <p class="hero__subtitle">Занялся собой? Займись котом!</p>
+          <img class="hero__image" src="img/hero-image.png" alt="Упаковка Cat Energy с курицей">
+          <a class="hero__button button" href="form.html">Подобрать программу</a>
+        </div>
+      </section>
+
+      <section class="programm">
+        <div class="container">
+          <h2 class="visually-hidden">Программы питания</h2>
+          <ul class="programm__list">
+            <li class="programm__item">
+              <article class="programm-card programm-card--diet">
+                <h3 class="programm-card__title">Похудение</h3>
+                <p class="programm-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                <a class="programm-card__link" href="catalog.html#energy-slim">Каталог slim</a>
+              </article>
+            </li>
+            <li class="programm__item">
+              <article class="programm-card programm-card--weight">
+                <h3 class="programm-card__title">Набор массы</h3>
+                <p class="programm-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <a class="programm-card__link" href="catalog.html#energy-pro">Каталог pro</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <h2 class="features__title">Как это работает</h2>
+          <ul class="features__list">
+            <li class="features__item features__item--healthy">Функциональное питание содержит только полезные питательные вещества.</li>
+            <li class="features__item features__item--easy">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+            <li class="features__item features__item--replace">Замените один-два приема обычной еды на наше функциональное питание.</li>
+            <li class="features__item features__item--result">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="example">
+        <div class="container">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__stats-common-wrapper">
+            <div class="example__stats-wrapper">
+              <p class="example__stats-summ">5 кг</p>
+              <p class="example__stats-description">снижение <br> веса</p>
+            </div>
+            <div class="example__stats-wrapper">
+              <p class="example__stats-summ">60 дней</p>
+              <p class="example__stats-description">затрачено времени</p>
+            </div>
+          </div>
+          <p class="example__total">Затраты на питание: 15 000 РУБ.</p>
+          <!-- тут будет слайдер -->
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="contacts__wrapper">
+            <div class="contacts__offer">Приглашаем к сотрудничеству дилеров!</div>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
+          <img class="contacts__map" src="img/map.png" width="320" height="362" alt="Мы на карте">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <a class="footer__logo">
+          <span class="visually-hidden">Логотип Cat Energy</span>
+        </a>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__list-item">
+              <a class="social__list-link social__list-link--vk" href="https://vk.com/htmlacademy" target="_blank">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__list-link social__list-link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+                <span class="visually-hidden">YouTube</span>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__list-link social__list-link--telegram" href="https://t.me/htmlacademy" target="_blank">
+                <span class="visually-hidden">Телеграмм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="footer__partner-logo" href="https://htmlacademy.ru">
+          <span class="visually-hidden">Логотип Html Academy</span>
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
