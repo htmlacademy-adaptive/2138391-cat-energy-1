@@ -1,14 +1,19 @@
-let navMain = document.querySelector('.navigation');
+let navList = document.querySelector('.navigation__list');
 let navToggle = document.querySelector('.navigation__toggle');
+let navMain = document.querySelector('.navigation');
 
 navMain.classList.remove('navigation--nojs');
 
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('navigation--closed')) {
-    navMain.classList.remove('navigation--closed');
-    navMain.classList.add('navigation--opened');
-  } else {
-    navMain.classList.add('navigation--closed');
-    navMain.classList.remove('navigation--opened');
-  }
-});
+navToggle.addEventListener ('click', function () {
+if (navToggle.classList.contains('navigation__toggle--closed') && navList.classList.contains('navigation__list--closed')) {
+navToggle.classList.remove('navigation__toggle--closed');
+navList.classList.remove('navigation__list--closed');
+navToggle.classList.add('navigation__toggle--opened');
+navList.classList.add('navigation__list--opened');
+} else {
+navToggle.classList.add('navigation__toggle--closed');
+navList.classList.add('navigation__list--closed');
+navToggle.classList.remove('navigation__toggle--opened');
+navList.classList.remove('navigation__list--opened');
+}
+})

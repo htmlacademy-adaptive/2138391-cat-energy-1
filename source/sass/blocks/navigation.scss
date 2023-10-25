@@ -1,66 +1,26 @@
 .navigation {
   position: absolute;
-  width: 320px;
   left: 0;
   top: 100%;
+  width: 100%;
+
+  &--nojs {
+    position: static;
+    margin-top: 15px;
+  }
 }
 
+
 .navigation__toggle {
-  position: absolute;
-  top: -30%;
-  transform: translate(0, 50%);
-  right: 20px;
+  display: inline-block;
   padding: 0;
   border: none;
   background-color: transparent;
   width: 24px;
   height: 24px;
-}
+  cursor: pointer;
 
-.navigation__list {
-  @include list-reset;
-}
-
-.navigation--opened .navigation__toggle {
-  &::before {
-    content: "";
-    display: block;
-    width: 18px;
-    height: 18px;
-    mask: url("../../img/icon-nav-opened.svg") no-repeat center / contain;
-    background: $color-navigation-toggle-clickable;
-  }
-
-  &:hover::before {
-    background: $color-navigation-toggle-hover;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.navigation--nojs {
-  position: static;
-  width: 280px;
-}
-
-.navigation--nojs .navigation__list {
-  width: 320px;
-  margin-top: 15px;
-  margin-left: -20px;
-}
-
-.navigation--closed {
-  min-height: 197px;
-}
-
-.navigation--closed .navigation__list {
-  display: none;
-}
-
-.navigation--closed .navigation__toggle {
-  &::before {
+  &--closed::before {
     content: "";
     display: block;
     width: 24px;
@@ -69,14 +29,44 @@
     background: $color-navigation-toggle-clickable;
   }
 
-  &:hover::before {
+  &--closed:hover::before {
     background: $color-navigation-toggle-hover;
   }
 
-  &:active {
+  &--closed:active {
+    opacity: 0.3;
+  }
+
+  &--opened::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    mask: url("../../img/icon-nav-opened.svg") no-repeat center / contain;
+    background: $color-navigation-toggle-clickable;
+  }
+
+  &--opened:hover::before {
+    background: $color-navigation-toggle-hover;
+  }
+
+  &--opened:active {
     opacity: 0.3;
   }
 }
+
+.navigation__list {
+  @include list-reset;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
 
 .navigation__item {
   padding: 22px 55px;
@@ -89,6 +79,11 @@
   &:last-child {
     border-bottom: none;
   }
+}
+
+.navigation--nojs .navigation__item {
+  width: 320px;
+  margin-left: -20px;
 }
 
 .navigation__link {
