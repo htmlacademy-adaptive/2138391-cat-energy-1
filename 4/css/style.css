@@ -22,7 +22,7 @@ body {
   box-sizing: border-box;
 }
 
-* a {
+a {
   text-decoration: none;
 }
 
@@ -54,7 +54,7 @@ img {
 
 .page-body {
   min-width: 320px;
-  font: 700 0.875rem/1.125rem "Lato", sans-serif;
+  font: 700 0.88rem/1.13rem "Lato", sans-serif;
   background-color: #ffffff;
   color: #444444;
 }
@@ -65,85 +65,35 @@ img {
 
 .header__container {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 13px;
   padding-bottom: 15px;
 }
 
-.header__logo {
-  display: block;
-  width: 100%;
-  position: relative;
-}
-
-.header__logo-text {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .navigation {
   position: absolute;
-  width: 320px;
   left: 0;
   top: 100%;
+  width: 100%;
+}
+.navigation--nojs {
+  position: static;
+  margin-top: 15px;
 }
 
 .navigation__toggle {
-  position: absolute;
-  top: -30%;
-  transform: translate(0, 50%);
-  right: 20px;
+  display: inline-block;
   padding: 0;
   border: none;
   background-color: transparent;
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
-
-.navigation__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.navigation--opened .navigation__toggle::before {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 18px;
-  -webkit-mask: url("../../img/icon-nav-opened.svg") no-repeat center/contain;
-          mask: url("../../img/icon-nav-opened.svg") no-repeat center/contain;
-  background: #000000;
-}
-.navigation--opened .navigation__toggle:hover::before {
-  background: #3e3e3e;
-}
-.navigation--opened .navigation__toggle:active {
-  opacity: 0.3;
-}
-
-.navigation--nojs {
-  position: static;
-  width: 280px;
-}
-
-.navigation--nojs .navigation__list {
-  width: 320px;
-  margin-top: 15px;
-  margin-left: -20px;
-}
-
-.navigation--closed {
-  min-height: 197px;
-}
-
-.navigation--closed .navigation__list {
-  display: none;
-}
-
-.navigation--closed .navigation__toggle::before {
+.navigation__toggle--closed::before {
   content: "";
   display: block;
   width: 24px;
@@ -152,11 +102,38 @@ img {
           mask: url("../../img/burger.svg") no-repeat center/contain;
   background: #000000;
 }
-.navigation--closed .navigation__toggle:hover::before {
+.navigation__toggle--closed:hover::before {
   background: #3e3e3e;
 }
-.navigation--closed .navigation__toggle:active {
+.navigation__toggle--closed:active {
   opacity: 0.3;
+}
+.navigation__toggle--opened::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  -webkit-mask: url("../../img/icon-nav-opened.svg") no-repeat center/contain;
+          mask: url("../../img/icon-nav-opened.svg") no-repeat center/contain;
+  background: #000000;
+}
+.navigation__toggle--opened:hover::before {
+  background: #3e3e3e;
+}
+.navigation__toggle--opened:active {
+  opacity: 0.3;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation__list--closed {
+  display: none;
+}
+.navigation__list--opened {
+  display: block;
 }
 
 .navigation__item {
@@ -169,6 +146,11 @@ img {
 }
 .navigation__item:last-child {
   border-bottom: none;
+}
+
+.navigation--nojs .navigation__item {
+  width: 320px;
+  margin-left: -20px;
 }
 
 .navigation__link {
@@ -298,7 +280,6 @@ img {
   font-family: "Oswald", sans-serif;
   padding: 27px 0 20px;
   text-align: center;
-  background-color: #68b738d9;
   color: #ffffff;
   background: url("../../img/hero-bg.png") top no-repeat;
 }
@@ -310,7 +291,7 @@ img {
 }
 
 .hero__subtitle {
-  line-height: 0.875rem;
+  line-height: 0.88rem;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 29px;
@@ -349,7 +330,7 @@ img {
 }
 
 .programm-card__title {
-  font: 400 1.5rmm/2.31rem "Oswald", sans-serif;
+  font: 400 1.5rem/2.31rem "Oswald", sans-serif;
   color: #000000;
   margin-top: 0;
   margin-bottom: 30px;
@@ -449,7 +430,7 @@ img {
 }
 
 .example__total {
-  font: 400 0.875rem/1.25rem "Oswald", sans-serif;
+  font: 400 0.88rem/1.25rem "Oswald", sans-serif;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
