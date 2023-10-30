@@ -3,16 +3,42 @@
   color: $color-text-secondary;
   margin-top: 0;
   margin-bottom: 30px;
-  text-align: center;
+  margin-left: 70px;
   text-transform: uppercase;
 }
 
 .programm-card__description {
-  margin-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: $color-border-2;
+    margin-top: 23px;
+  }
 }
 
 .programm-card__link {
   font: $font-link-basic;
+  display: inline-block;
+  position: relative;
   color: $color-text-secondary;
   text-transform: uppercase;
+  padding-right: 47px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+    width: 32px;
+    height: 10px;
+    background-image: url("../../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+  }
 }

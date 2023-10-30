@@ -5,5 +5,20 @@
 .programm__item {
   background-color: $color-background-3;
   margin-bottom: 20px;
-  padding: 30px 20px 20px;
+  padding-top: 30px;
+  padding-right: 35px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  &--diet {
+    background-image: url("../../img/icon-porgramm-diet.svg");
+    background-repeat: no-repeat;
+    background-position: top 24px left 20px;
+  }
+
+  &--weight {
+    background-image: url("../../img/icon-programm-weight.svg");
+    background-repeat: no-repeat;
+    background-position: top 24px left 13px;
+  }
 }

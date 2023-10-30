@@ -15,8 +15,35 @@
 
 .features__item {
   margin-bottom: 26px;
+  position: relative;
+  padding-left: 80px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+  }
+
+  &--healthy::before {
+    background-image: url("../../img/icon-leaf.svg");
+  }
+
+  &--easy::before {
+    background-image: url("../../img/icon-glass-bubbles.svg");
+  }
+
+  &--replace::before {
+    background-image: url("../../img/icon-knife-fork.svg");
+  }
+
+  &--result::before {
+    background-image: url("../../img/icon-clock.svg");
   }
 }
