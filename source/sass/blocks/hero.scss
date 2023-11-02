@@ -1,9 +1,14 @@
 .hero {
-  font-family: "Oswald", sans-serif;
-  padding: 27px 0 20px;
   text-align: center;
   color: $color-text-tertiary;
-  background: url("../../img/hero-bg.png") top no-repeat;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 60%, rgba(255, 255, 255, 1) 40%), url("../../img/background-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto auto;
+}
+
+.hero__container {
+  padding-top: 27px;
 }
 
 .hero__title {
@@ -13,7 +18,7 @@
 }
 
 .hero__subtitle {
-  line-height: 0.88rem;
+  font: $font-hero-subtitle;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 29px;

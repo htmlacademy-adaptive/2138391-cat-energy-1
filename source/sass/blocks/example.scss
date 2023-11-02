@@ -1,7 +1,10 @@
 .example {
+  background-color: $color-background-4;
+}
+
+.example__container {
   padding-top: 25px;
   padding-bottom: 40px;
-  background-color: $color-background-4;
 }
 
 .example__title {

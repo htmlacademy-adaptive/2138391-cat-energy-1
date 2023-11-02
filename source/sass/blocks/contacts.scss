@@ -1,12 +1,12 @@
-.contacts {
+.contacts__container {
   padding-top: 26px;
+  margin-bottom: 26px;
 }
 
 .contacts__wrapper {
   width: 280px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 26px;
 }
 
 .contacts__offer {
@@ -20,8 +20,4 @@
   width: 140px;
   font-style: normal;
   line-height: 1.25rem;
-}
-
-.contacts__map {
-  display: block;
 }

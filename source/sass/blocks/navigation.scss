@@ -7,9 +7,12 @@
   &--nojs {
     position: static;
     margin-top: 15px;
+
+    .navigation__list {
+      display: block;
+    }
   }
 }
-
 
 .navigation__toggle {
   display: inline-block;
@@ -19,6 +22,10 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
+
+  &--nojs {
+    visibility: hidden;
+  }
 
   &--closed::before {
     content: "";
@@ -66,7 +73,6 @@
     display: block;
   }
 }
-
 
 .navigation__item {
   padding: 22px 55px;

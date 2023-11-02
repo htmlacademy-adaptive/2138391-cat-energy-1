@@ -18,6 +18,11 @@ img {
   object-fit: contain;
 }
 
+iframe {
+  border: none;
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
