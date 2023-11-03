@@ -10,13 +10,13 @@
   <body class="page-body">
     <header class="header">
       <div class="header__container container">
-        <a class="header__link-logo-image">
+        <a class="header__logo">
           <img class="header__logo-image" src="img/logo-image.svg" width="33" height="38" alt="Логотип супер кот.">
         </a>
-        <a class="header__link-logo-text">
+        <a class="header__logo">
           <img class="header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
         </a>
-        <button class="navigation__toggle navigation__toggle--closed" type="button">
+        <button class="navigation__toggle navigation__toggle--nojs navigation__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <nav class="navigation navigation--nojs">
@@ -36,7 +36,7 @@
     </header>
 
     <main class="page-content">
-      <section class="hero">
+      <section class="hero page-content__hero">
         <div class="container hero__container">
           <h1 class="hero__title">Функциональное питание для котов</h1>
           <p class="hero__subtitle">Занялся собой? Займись котом!</p>
@@ -45,19 +45,19 @@
         </div>
       </section>
 
-      <section class="programm">
+      <section class="programm page-content__programm">
         <div class="container">
           <h2 class="visually-hidden">Программы питания</h2>
           <ul class="programm__list">
-            <li class="programm__item">
-              <article class="programm-card programm-card--diet">
+            <li class="programm__item programm__item--diet">
+              <article class="programm-card">
                 <h3 class="programm-card__title">Похудение</h3>
                 <p class="programm-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <a class="programm-card__link" href="catalog.html#energy-slim">Каталог slim</a>
               </article>
             </li>
-            <li class="programm__item">
-              <article class="programm-card programm-card--weight">
+            <li class="programm__item programm__item--weight">
+              <article class="programm-card">
                 <h3 class="programm-card__title">Набор массы</h3>
                 <p class="programm-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
                 <a class="programm-card__link" href="catalog.html#energy-pro">Каталог pro</a>
@@ -67,7 +67,7 @@
         </div>
       </section>
 
-      <section class="features">
+      <section class="features page-content__features">
         <div class="container">
           <h2 class="features__title">Как это работает</h2>
           <ul class="features__list">
@@ -80,7 +80,7 @@
       </section>
 
       <section class="example">
-        <div class="container">
+        <div class="container example__container">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__stats-common-wrapper">
@@ -99,14 +99,14 @@
       </section>
 
       <section class="contacts">
-        <div class="container">
+        <div class="container contacts__container">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper">
             <div class="contacts__offer">Приглашаем к сотрудничеству дилеров!</div>
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </div>
-          <img class="contacts__map" src="img/map.png" width="320" height="362" alt="Мы на карте">
         </div>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=mymaps%3A4Iq6WtbrHHkK9hab1xfXVBgsAQQB6Fe9&amp;source=constructor" title="Мы на карте" width="100%" height="362" frameborder="0"></iframe>
       </section>
     </main>
 
