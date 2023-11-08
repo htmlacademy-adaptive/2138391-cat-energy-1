@@ -239,6 +239,8 @@ iframe {
   width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
+  position: relative;
+  background-color: #68b738d9;
 }
 .hero__button:hover {
   background-color: #5eaa2f;
