@@ -4,6 +4,7 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import modifyCssUrls from 'gulp-modify-css-urls';
 
 // Styles
 
@@ -42,4 +43,16 @@ const watcher = () => {
 
 export default gulp.series(
   styles, server, watcher
+);
+
+// Modify urls
+
+gulp.task('modifyUrls', () =>
+  gulp.src('style.css')
+    .pipe(modifyCssUrls({
+      modify(url, filePath) {
+        return url.replace("../../fonts, '/fonts/");
+      },
+    }))
+    .pipe(gulp.dest('./'))
 );

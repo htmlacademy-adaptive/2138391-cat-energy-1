@@ -34,6 +34,8 @@
   width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
+  position: relative;
+  background-color: $color-background-2;
 
   &:hover {
     background-color: $color-background-5;
