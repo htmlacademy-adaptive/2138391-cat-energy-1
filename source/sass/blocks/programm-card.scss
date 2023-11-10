@@ -1,9 +1,23 @@
+.programm-card__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.programm-card--diet .programm-card__wrapper {
+  gap: 20px;
+}
+
+.programm-card--weight .programm-card__wrapper {
+  gap: 11px;
+}
+
 .programm-card__title {
   font: $font-title-mobile-medium;
   color: $color-text-secondary;
+  order: 2;
   margin-top: 0;
-  margin-bottom: 30px;
-  margin-left: 70px;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
@@ -23,19 +37,14 @@
 
 .programm-card__link {
   font: $font-link-basic;
-  display: inline-block;
-  position: relative;
+  display: inline-flex;
+  gap: 15px;
   color: $color-text-secondary;
   text-transform: uppercase;
-  padding-right: 47px;
 
   &::after {
     content: "";
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-100%, -50%);
     width: 32px;
     height: 10px;
     background-image: url("../../img/icon-arrow.svg");

@@ -6,60 +6,11 @@
 
   &--nojs {
     position: static;
-    margin-top: 15px;
-
-    .navigation__list {
-      display: block;
-    }
   }
 }
 
-.navigation__toggle {
-  display: inline-block;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-
-  &--nojs {
-    visibility: hidden;
-  }
-
-  &--closed::before {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    mask: url("../../img/burger.svg") no-repeat center / contain;
-    background: $color-navigation-toggle-clickable;
-  }
-
-  &--closed:hover::before {
-    background: $color-navigation-toggle-hover;
-  }
-
-  &--closed:active {
-    opacity: 0.3;
-  }
-
-  &--opened::before {
-    content: "";
-    display: block;
-    width: 18px;
-    height: 18px;
-    mask: url("../../img/icon-nav-opened.svg") no-repeat center / contain;
-    background: $color-navigation-toggle-clickable;
-  }
-
-  &--opened:hover::before {
-    background: $color-navigation-toggle-hover;
-  }
-
-  &--opened:active {
-    opacity: 0.3;
-  }
+.navigation--nojs .navigation__list {
+  display: block;
 }
 
 .navigation__list {
@@ -82,7 +33,12 @@
   border-bottom: 1px solid $color-border-1;
   background-color: $color-background-1;
 
+  &:first-child {
+    border-bottom: none;
+  }
+
   &:last-child {
+    border-top: none;
     border-bottom: none;
   }
 }

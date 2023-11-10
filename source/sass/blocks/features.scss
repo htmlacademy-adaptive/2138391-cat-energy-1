@@ -1,3 +1,54 @@
+.features__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.features__item-decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: $color-background-2;
+  flex-shrink: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 32px;
+    background-repeat: no-repeat;
+  }
+
+  &--healthy::before {
+    background-image: url("../../img/icon-leaf.svg");
+  }
+
+  &--easy::before {
+    background-image: url("../../img/icon-bubble.svg");
+  }
+
+  &--replace::before {
+    background-image: url("../../img/icon-fork-knife.svg");
+  }
+
+  &--time::before {
+    background-image: url("../../img/icon-time.svg");
+  }
+}
+
+.features__item-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  order: 2;
+}
+
 .features__title {
   font: $font-title-mobile-large;
   color: $color-text-secondary;
@@ -7,39 +58,4 @@
 
 .features__list {
   @include list-reset;
-}
-
-.features__item {
-  margin-bottom: 26px;
-  position: relative;
-  padding-left: 80px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
-  }
-
-  &--healthy::before {
-    background-image: url("../../img/icon-leaf.svg");
-  }
-
-  &--easy::before {
-    background-image: url("../../img/icon-glass-bubbles.svg");
-  }
-
-  &--replace::before {
-    background-image: url("../../img/icon-knife-fork.svg");
-  }
-
-  &--result::before {
-    background-image: url("../../img/icon-clock.svg");
-  }
 }

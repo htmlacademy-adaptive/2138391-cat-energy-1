@@ -4,20 +4,17 @@
 }
 
 .contacts__wrapper {
-  width: 280px;
   display: flex;
-  justify-content: space-between;
+  gap: 18px;
 }
 
 .contacts__offer {
-  width: 140px;
   font: $font-contacts-offer;
   color: $color-text-secondary;
   text-transform: uppercase;
 }
 
 .contacts__address {
-  width: 140px;
   font-style: normal;
   line-height: 1.25rem;
 }

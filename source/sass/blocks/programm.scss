@@ -10,16 +10,4 @@
   &:last-child {
     margin-bottom: 0;
   }
-
-  &--diet {
-    background-image: url("../../img/icon-porgramm-diet.svg");
-    background-repeat: no-repeat;
-    background-position: top 24px left 20px;
-  }
-
-  &--weight {
-    background-image: url("../../img/icon-programm-weight.svg");
-    background-repeat: no-repeat;
-    background-position: top 24px left 13px;
-  }
 }

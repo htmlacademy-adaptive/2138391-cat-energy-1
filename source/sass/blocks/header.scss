@@ -5,11 +5,16 @@
 .header__container {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 13px;
+}
+
+.header__wrapper {
+  display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding-top: 13px;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .header__logo-image {
@@ -18,4 +23,52 @@
 
 .header__logo-text {
   display: block;
+}
+
+.header__toggle {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  &--closed::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    mask: url("../../img/burger.svg") no-repeat center / contain;
+    background: $color-header-toggle-clickable;
+  }
+
+  &--closed:hover::before {
+    background: $color-header-toggle-hover;
+  }
+
+  &--closed:active {
+    opacity: 0.3;
+  }
+
+  &--opened::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    mask: url("../../img/icon-nav-opened.svg") no-repeat center / contain;
+    background: $color-header-toggle-clickable;
+  }
+
+  &--opened:hover::before {
+    background: $color-header-toggle-hover;
+  }
+
+  &--opened:active {
+    opacity: 0.3;
+  }
+}
+
+.header__wrapper--nojs .header__toggle {
+  visibility: hidden;
 }
