@@ -138,8 +138,8 @@ iframe {
   display: block;
   width: 24px;
   height: 24px;
-  -webkit-mask: url("../img/burger.svg") no-repeat center/contain;
-          mask: url("../img/burger.svg") no-repeat center/contain;
+  -webkit-mask: url("img/burger.svg") no-repeat center/contain;
+          mask: url("img/burger.svg") no-repeat center/contain;
   background: #000000;
 }
 .header__toggle--closed:focus::before {
