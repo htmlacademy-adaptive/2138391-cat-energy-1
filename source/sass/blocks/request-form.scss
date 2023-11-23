@@ -48,6 +48,7 @@
 .request-form__group-name {
   font: $font-form-legend;
   color: $color-text-secondary;
+  margin-bottom: 36px;
 }
 
 .request-form__list {
@@ -166,10 +167,6 @@
   background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.request-form__group-name {
-  margin-bottom: 36px;
 }
 
 .request-form__label {

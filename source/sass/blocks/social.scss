@@ -13,7 +13,6 @@
 }
 
 .social__list-link {
-
   &::before {
     content: "";
     display: block;
@@ -46,4 +45,3 @@
     mask: url("../../img/telegram-icon.svg") no-repeat center / contain;
   }
 }
-
