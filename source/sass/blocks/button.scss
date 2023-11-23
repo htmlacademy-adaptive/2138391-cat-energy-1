@@ -1,6 +1,21 @@
 .button {
-  padding: 0 44px;
+  display: block;
+  width: 280px;
+  border: none;
   text-transform: uppercase;
-  color: $color-text-tertiary;
-  background-color: $color-background-2;
+  cursor: pointer;
+
+  &--primary {
+    color: $color-text-tertiary;
+    background-color: $color-background-2;
+
+    &:hover {
+      background-color: $color-background-5;
+    }
+
+    &:active {
+      background-color: $color-background-5;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }

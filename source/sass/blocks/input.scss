@@ -1,0 +1,10 @@
+.input {
+  font: $font-form-input;
+  padding: 14px 15px 13px 15px;
+  border: 1px solid $color-border-4;
+  text-transform: uppercase;
+
+  &--decorated {
+    padding-right: 35px;
+  }
+}

@@ -9,6 +9,10 @@ $font-link-basic: 400 1rem / 1rem "Oswald", sans-serif;
 $font-example-stats-summ: 400 1.5rem / 1.5rem "Oswald", sans-serif;
 $font-example-stats-total: 400 0.88rem / 1.25rem "Oswald", sans-serif;
 $font-contacts-offer: 400 1rem / 1.25rem "Oswald", sans-serif;
+$font-form-description: 400 0.88rem / 1.13rem "Oswald", sans-serif;
+$font-form-input: 400 1rem / 1.13rem "Oswald", sans-serif;
+$font-form-legend: 400 1.5rem / 1.63rem "Oswald", sans-serif;
+$font-form-required-info: 400 0.88rem / 1rem "Lato", sans-serif;
 
 // Переменные для текста
 $color-text-primary: #444444;
@@ -26,20 +30,30 @@ $color-background-5: #5eaa2f;
 $color-border-1: #e6e6e6;
 $color-border-2: #d9d9d9;
 $color-border-3: #cdcdcd;
+$color-border-4: #e7e7e7;
+$color-border-5: #444444;
+$color-border-6: #bababa;
 
 // Переменные для интерактиынх элементов
 $color-header-toggle-clickable: #000000;
+$color-header-toogle-focused: #3e3e3e;
 $color-header-toggle-hover: #3e3e3e;
 
 $color-footer-logo-clickable: #111111;
+$color-footer-logo-focused: #3e3e3e;
 $color-footer-logo-hover: #3e3e3e;
 $color-footer-logo-pressed: #6b6b6b;
 
 $color-partner-logo-clickable: #666666;
+$color-partner-logo-focused: #68b738;
 $color-partner-logo-hover: #68b738;
 
 $color-social-link-clickable: #666666;
 $color-social-link-hover: #68b738;
+
+$color-decoration-input: #222222;
+$color-decoration-input-focus: #68b738d9;
+$color-decoration-input-error: #ff8282;
 
 // Переменные для размеров экрана
 $tablet-width: 768px;

@@ -50,4 +50,20 @@
     background-image: url("../../img/icon-arrow.svg");
     background-repeat: no-repeat;
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus::after {
+    background-image: url("../img/icon-arrow-long.svg");
+  }
+
+  &:hover::after {
+    background-image: url("../../img/icon-arrow-long.svg");
+  }
 }

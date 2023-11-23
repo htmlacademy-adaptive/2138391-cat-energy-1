@@ -1,0 +1,216 @@
+.request-form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: relative;
+
+  &--personal-data {
+    margin-bottom: 46px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      bottom: -24px;
+      width: calc(100% + 40px);
+      height: 1px;
+      background-color: $color-border-2;
+    }
+  }
+
+  &--target {
+    margin-bottom: 45px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      bottom: -19px;
+      width: calc(100% + 40px);
+      height: 1px;
+      background-color: $color-border-2;
+    }
+  }
+
+  &--feedback-data {
+    margin-bottom: 24px;
+  }
+
+  &--comment {
+    margin-bottom: 23px;
+  }
+
+  &--additional {
+    margin-bottom: 34px;
+  }
+}
+
+.request-form__group-name {
+  font: $font-form-legend;
+  color: $color-text-secondary;
+}
+
+.request-form__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--fillable {
+    gap: 14px;
+  }
+
+  &--selectable {
+    gap: 13px;
+  }
+}
+
+.request-form__field {
+  display: grid;
+  align-items: center;
+  position: relative;
+
+  &--fillable {
+    grid-template-columns: max-content 2fr;
+    gap: 13px;
+  }
+
+  &--selectable {
+    grid-template-columns: max-content max-content;
+    gap: 15px;
+  }
+}
+
+.request-form__control {
+  cursor: pointer;
+
+  &:focus {
+    outline: 1px solid $color-border-5;
+  }
+
+  &:hover {
+    border-color: $color-border-6;
+  }
+
+  &::placeholder {
+    color: $color-text-primary;
+  }
+}
+
+.request-form__control-mark {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.request-form__control[type="number"]::-webkit-outer-spin-button,
+.request-form__control[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.request-form__control[type="radio"] + .request-form__control-mark {
+  border-radius: 50%;
+  border: 1px solid $color-border-3;
+  cursor: pointer;
+}
+
+.request-form__control[type="radio"]:focus + .request-form__control-mark {
+  outline: 1px solid $color-border-5;
+}
+
+.request-form__control[type="radio"]:hover + .request-form__control-mark {
+  border-color: $color-border-6;
+}
+
+.request-form__control[type="radio"]:disabled + .request-form__control-mark + .request-form__label {
+  opacity: 0.3;
+}
+
+.request-form__control[type="radio"]:checked + .request-form__control-mark::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-background-2;
+}
+
+
+.request-form__control[type="checkbox"] + .request-form__control-mark {
+  border: 1px solid $color-border-3;
+  cursor: pointer;
+}
+
+.request-form__control[type="checkbox"]:focus + .request-form__control-mark {
+  outline: 1px solid $color-border-5;
+}
+
+.request-form__control[type="checkbox"]:hover + .request-form__control-mark {
+  border-color: $color-border-6;
+}
+
+.request-form__control[type="checkbox"]:disabled + .request-form__control-mark + .request-form__label {
+  opacity: 0.3;
+}
+
+.request-form__control[type="checkbox"]:checked + .request-form__control-mark::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.request-form__group-name {
+  margin-bottom: 36px;
+}
+
+.request-form__label {
+  font: $font-form-input;
+  text-transform: uppercase;
+}
+
+.request-form__control-icon {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translate(0, -50%);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: $color-decoration-input;
+  }
+
+  &--email {
+    mask: url("../../img/icon-email.svg") no-repeat center / contain;
+  }
+
+  &--phone {
+    mask: url("../../img/icon-phone.svg") no-repeat center / contain;
+  }
+}
+
+.request-form__control:focus + .request-form__control-icon::before {
+  background: $color-decoration-input-focus;
+}
+
+.request-form__button {
+  padding: 14px 44px;
+  margin-bottom: 21px;
+}
+
+.request-form__required-fields-info {
+  font: $font-form-required-info;
+  color: $color-text-secondary;
+  text-align: center;
+}

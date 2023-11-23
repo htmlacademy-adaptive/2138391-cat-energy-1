@@ -1,3 +1,9 @@
+.contacts {
+  &--colored-background {
+    background-color: $color-background-3;
+  }
+}
+
 .contacts__container {
   padding-top: 26px;
   margin-bottom: 26px;

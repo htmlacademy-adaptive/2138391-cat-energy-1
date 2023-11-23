@@ -17,6 +17,21 @@
   margin-bottom: 15px;
 }
 
+.header__link {
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .header__logo-image {
   display: block;
 }
@@ -34,6 +49,10 @@
   height: 24px;
   cursor: pointer;
 
+  &:focus {
+    outline: none;
+  }
+
   &--closed::before {
     content: "";
     display: block;
@@ -41,6 +60,10 @@
     height: 24px;
     mask: url("../../img/burger.svg") no-repeat center / contain;
     background: $color-header-toggle-clickable;
+  }
+
+  &--closed:focus::before {
+    background: $color-header-toogle-focused;
   }
 
   &--closed:hover::before {
@@ -58,6 +81,10 @@
     height: 18px;
     mask: url("../../img/icon-nav-opened.svg") no-repeat center / contain;
     background: $color-header-toggle-clickable;
+  }
+
+  &--opened:focus::before {
+    background: $color-header-toogle-focused;
   }
 
   &--opened:hover::before {

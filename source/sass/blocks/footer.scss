@@ -18,6 +18,10 @@
   margin-bottom: 20px;
   border-bottom: 1px solid $color-border-2;
 
+  &:focus {
+    outline: none;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -25,6 +29,10 @@
     height: 24px;
     mask: url("../../img/footer-logo.svg") no-repeat center / contain;
     background: $color-footer-logo-clickable;
+  }
+
+  &:focus::before {
+    background: $color-footer-logo-focused;
   }
 
   &:hover::before {
@@ -49,6 +57,14 @@
   align-items: center;
   justify-content: space-between;
 
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "HTML Academy";
     font-size: 16px;
@@ -65,11 +81,11 @@
     background: $color-partner-logo-clickable;
   }
 
-  &:hover::after {
-    background: $color-partner-logo-hover;
+  &:focus::after {
+    background: $color-partner-logo-focused;
   }
 
-  &:active {
-    opacity: 0.3;
+  &:hover::after {
+    background: $color-partner-logo-hover;
   }
 }

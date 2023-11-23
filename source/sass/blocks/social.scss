@@ -13,12 +13,17 @@
 }
 
 .social__list-link {
+
   &::before {
     content: "";
     display: block;
     width: 28px;
     height: 22px;
     background: $color-social-link-clickable;
+  }
+
+  &:focus::before {
+    background: $color-social-link-hover;
   }
 
   &:hover::before {
@@ -41,3 +46,4 @@
     mask: url("../../img/telegram-icon.svg") no-repeat center / contain;
   }
 }
+
