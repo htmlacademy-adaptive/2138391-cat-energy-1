@@ -2,14 +2,14 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/oswald/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/lato/Lato-Regular.woff2") format("woff2");
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
   font-display: swap;
 }
 body {
@@ -138,8 +138,8 @@ iframe {
   display: block;
   width: 24px;
   height: 24px;
-  -webkit-mask: url("img/burger.svg") no-repeat center/contain;
-          mask: url("img/burger.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/burger.svg") no-repeat center/contain;
+          mask: url("../img/burger.svg") no-repeat center/contain;
   background: #000000;
 }
 .header__toggle--closed:focus::before {
@@ -156,8 +156,8 @@ iframe {
   display: block;
   width: 18px;
   height: 18px;
-  -webkit-mask: url("../../img/icon-nav-opened.svg") no-repeat center/contain;
-          mask: url("../../img/icon-nav-opened.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/icon-nav-opened.svg") no-repeat center/contain;
+          mask: url("../img/icon-nav-opened.svg") no-repeat center/contain;
   background: #000000;
 }
 .header__toggle--opened:focus::before {
@@ -252,7 +252,7 @@ iframe {
 .hero {
   text-align: center;
   color: #ffffff;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 60%, white 40%), url("../../img/background-cat.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 60%, white 40%), url("../img/background-cat.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: auto auto;
@@ -347,7 +347,7 @@ iframe {
   display: block;
   width: 32px;
   height: 10px;
-  background-image: url("../../img/icon-arrow.svg");
+  background-image: url("../img/icon-arrow.svg");
   background-repeat: no-repeat;
 }
 .programm-card__link:focus {
@@ -360,7 +360,7 @@ iframe {
   background-image: url("../img/icon-arrow-long.svg");
 }
 .programm-card__link:hover::after {
-  background-image: url("../../img/icon-arrow-long.svg");
+  background-image: url("../img/icon-arrow-long.svg");
 }
 
 .features__item {
@@ -390,16 +390,16 @@ iframe {
   background-repeat: no-repeat;
 }
 .features__item-decoration--healthy::before {
-  background-image: url("../../img/icon-leaf.svg");
+  background-image: url("../img/icon-leaf.svg");
 }
 .features__item-decoration--easy::before {
-  background-image: url("../../img/icon-bubble.svg");
+  background-image: url("../img/icon-bubble.svg");
 }
 .features__item-decoration--replace::before {
-  background-image: url("../../img/icon-fork-knife.svg");
+  background-image: url("../img/icon-fork-knife.svg");
 }
 .features__item-decoration--time::before {
-  background-image: url("../../img/icon-time.svg");
+  background-image: url("../img/icon-time.svg");
 }
 
 .features__item-text {
@@ -542,8 +542,8 @@ iframe {
   display: block;
   width: 128px;
   height: 24px;
-  -webkit-mask: url("../../img/footer-logo.svg") no-repeat center/contain;
-          mask: url("../../img/footer-logo.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/footer-logo.svg") no-repeat center/contain;
+          mask: url("../img/footer-logo.svg") no-repeat center/contain;
   background: #111111;
 }
 .footer__logo:focus::before {
@@ -586,8 +586,8 @@ iframe {
   display: block;
   width: 27px;
   height: 34px;
-  -webkit-mask: url("../../img/academy-logo.svg") no-repeat center/contain;
-          mask: url("../../img/academy-logo.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/academy-logo.svg") no-repeat center/contain;
+          mask: url("../img/academy-logo.svg") no-repeat center/contain;
   background: #666666;
 }
 .footer__partner-logo:focus::after {
@@ -629,16 +629,16 @@ iframe {
   opacity: 0.3;
 }
 .social__list-link--vk {
-  -webkit-mask: url("../../img/vk-icon.svg") no-repeat center/contain;
-          mask: url("../../img/vk-icon.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/vk-icon.svg") no-repeat center/contain;
+          mask: url("../img/vk-icon.svg") no-repeat center/contain;
 }
 .social__list-link--youtube {
-  -webkit-mask: url("../../img/youtube-icon.svg") no-repeat center/contain;
-          mask: url("../../img/youtube-icon.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/youtube-icon.svg") no-repeat center/contain;
+          mask: url("../img/youtube-icon.svg") no-repeat center/contain;
 }
 .social__list-link--telegram {
-  -webkit-mask: url("../../img/telegram-icon.svg") no-repeat center/contain;
-          mask: url("../../img/telegram-icon.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/telegram-icon.svg") no-repeat center/contain;
+          mask: url("../img/telegram-icon.svg") no-repeat center/contain;
 }
 
 .programm-request__container {
@@ -814,7 +814,7 @@ iframe {
   display: block;
   width: 26px;
   height: 26px;
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -838,12 +838,12 @@ iframe {
   background: #222222;
 }
 .request-form__control-icon--email {
-  -webkit-mask: url("../../img/icon-email.svg") no-repeat center/contain;
-          mask: url("../../img/icon-email.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/icon-email.svg") no-repeat center/contain;
+          mask: url("../img/icon-email.svg") no-repeat center/contain;
 }
 .request-form__control-icon--phone {
-  -webkit-mask: url("../../img/icon-phone.svg") no-repeat center/contain;
-          mask: url("../../img/icon-phone.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/icon-phone.svg") no-repeat center/contain;
+          mask: url("../img/icon-phone.svg") no-repeat center/contain;
 }
 
 .request-form__control:focus + .request-form__control-icon::before {
