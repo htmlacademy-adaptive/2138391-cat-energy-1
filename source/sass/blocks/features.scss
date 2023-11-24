@@ -27,19 +27,19 @@
   }
 
   &--healthy::before {
-    background-image: url("../../img/icon-leaf.svg");
+    background-image: url("../img/icon-leaf.svg");
   }
 
   &--easy::before {
-    background-image: url("../../img/icon-bubble.svg");
+    background-image: url("../img/icon-bubble.svg");
   }
 
   &--replace::before {
-    background-image: url("../../img/icon-fork-knife.svg");
+    background-image: url("../img/icon-fork-knife.svg");
   }
 
   &--time::before {
-    background-image: url("../../img/icon-time.svg");
+    background-image: url("../img/icon-time.svg");
   }
 }
 

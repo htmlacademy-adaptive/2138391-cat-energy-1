@@ -164,7 +164,7 @@
   display: block;
   width: 26px;
   height: 26px;
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -189,11 +189,11 @@
   }
 
   &--email {
-    mask: url("../../img/icon-email.svg") no-repeat center / contain;
+    mask: url("../img/icon-email.svg") no-repeat center / contain;
   }
 
   &--phone {
-    mask: url("../../img/icon-phone.svg") no-repeat center / contain;
+    mask: url("../img/icon-phone.svg") no-repeat center / contain;
   }
 }
 
