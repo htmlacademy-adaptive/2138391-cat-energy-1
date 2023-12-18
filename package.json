@@ -43,5 +43,8 @@
   "type": "module",
   "dependencies": {
     "gulp-css-url-adjuster": "^0.2.3"
+  },
+  "volta": {
+    "node": "16.20.2"
   }
 }

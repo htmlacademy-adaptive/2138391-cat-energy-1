@@ -22,8 +22,8 @@
         </div>
         <nav class="navigation navigation--nojs">
           <ul class="navigation__list navigation__list--closed">
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--current">Главная</a>
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link">Главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Каталог продукции</a>
@@ -46,29 +46,19 @@
         </div>
       </section>
 
-      <section class="programm page-content__programm">
+      <section class="program page-content__program">
         <div class="container">
           <h2 class="visually-hidden">Программы питания</h2>
-          <ul class="programm__list">
-            <li class="programm__item">
-              <article class="programm-card programm-card--diet">
-                <div class="programm-card__wrapper">
-                  <h3 class="programm-card__title">Похудение</h3>
-                  <img class="programm-card__image" src="img/programm-diet-image.png" width="50" height="53" alt="Силуэт стройного кота">
-                </div>
-                <p class="programm-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <a class="programm-card__link" href="catalog.html#energy-slim">Каталог slim</a>
-              </article>
+          <ul class="program__list">
+            <li class="program__item program-card program-card--diet">
+              <h3 class="program-card__title">Похудение</h3>
+              <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="program-card__link" href="catalog.html#energy-slim">Каталог slim</a>
             </li>
-            <li class="programm__item">
-              <article class="programm-card programm-card--weight">
-                <div class="programm-card__wrapper">
-                  <h3 class="programm-card__title">Набор массы</h3>
-                  <img class="programm-card__image" src="img/programm-weight-image.png" width="67" height="50" alt="Силуэт массивного кота">
-                </div>
-                <p class="programm-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                <a class="programm-card__link" href="catalog.html#energy-pro">Каталог pro</a>
-              </article>
+            <li class="program__item program-card program-card--weight">
+              <h3 class="program-card__title">Набор массы</h3>
+              <p class="program-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="program-card__link" href="catalog.html#energy-pro">Каталог pro</a>
             </li>
           </ul>
         </div>
@@ -78,21 +68,17 @@
         <div class="container">
           <h2 class="features__title">Как это работает</h2>
           <ul class="features__list">
-            <li class="features__item">
+            <li class="features__item features__item--healthy">
               <p class="features__item-text">Функциональное питание содержит только полезные питательные вещества.</p>
-              <span class="features__item-decoration features__item-decoration--healthy"></span>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--easy">
               <p class="features__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-              <span class="features__item-decoration features__item-decoration--easy"></span>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--daily">
               <p class="features__item-text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-              <span class="features__item-decoration features__item-decoration--replace"></span>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--quickly">
               <p class="features__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-              <span class="features__item-decoration features__item-decoration--time"></span>
             </li>
           </ul>
         </div>
@@ -102,17 +88,20 @@
         <div class="container example__container">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__stats-common-wrapper">
-            <div class="example__stats-wrapper">
-              <p class="example__stats-summ">5 кг</p>
-              <p class="example__stats-description">снижение <br> веса</p>
+          <dl class="example__stats">
+            <div class="example__stats-wrapper example__stats-wrapper--decorated">
+              <dt class="example__stats-name example__stats-name--decorated">снижение <br> веса</dt>
+              <dd class="example__stats-description example__stats-description--decorated">5 кг</dd>
             </div>
-            <div class="example__stats-wrapper">
-              <p class="example__stats-summ">60 дней</p>
-              <p class="example__stats-description">затрачено времени</p>
+            <div class="example__stats-wrapper example__stats-wrapper--decorated">
+              <dt class="example__stats-name example__stats-name--decorated">затрачено <br> времени</dt>
+              <dd class="example__stats-description example__stats-description--decorated">60 дней</dd>
             </div>
-          </div>
-          <p class="example__total">Затраты на питание: 15 000 РУБ.</p>
+            <div class="example__stats-wrapper example__stats-wrapper--wide">
+              <dt class="example__stats-name example__stats-name--wide">Затраты на питание: </dt>
+              <dd class="example__stats-description example__stats-description--wide">15 000 руб.</dd>
+            </div>
+          </dl>
           <!-- тут будет слайдер -->
         </div>
       </section>
@@ -125,7 +114,7 @@
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </div>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=mymaps%3A4Iq6WtbrHHkK9hab1xfXVBgsAQQB6Fe9&amp;source=constructor" title="Мы на карте" width="100%" height="362" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=mymaps%3A4Iq6WtbrHHkK9hab1xfXVBgsAQQB6Fe9&amp;source=constructor" title="Мы на карте" width="100%" height="362"></iframe>
       </section>
     </main>
 

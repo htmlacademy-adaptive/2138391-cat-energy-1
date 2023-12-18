@@ -28,8 +28,8 @@
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__item--current">Подбор программы</a>
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -37,11 +37,11 @@
     </header>
 
     <main class="page-content">
-      <section class="programm-request">
-        <div class="container programm-request__container">
-          <h1 class="programm-request__title">Подбор программы</h1>
-          <p class="programm-request__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <form class="programm-request__form request-form" action="https://echo.htmlacademy.ru/" method="post">
+      <section class="program-request">
+        <div class="container program-request__container">
+          <h1 class="program-request__title">Подбор программы</h1>
+          <p class="program-request__description">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
+          <form class="program-request__form request-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="request-form__group request-form__group--personal-data">
               <legend class="visually-hidden">Персональные данные</legend>
               <ul class="request-form__list request-form__list--fillable">
@@ -70,22 +70,19 @@
               <ul class="request-form__list request-form__list--selectable">
                 <li class="request-form__list-item">
                   <label class="request-form__field request-form__field--selectable">
-                    <input class="request-form__control visually-hidden radio" type="radio" name="request-form-target" value="lose-weight" checked>
-                    <span class="request-form__control-mark"></span>
+                    <input class="request-form__control radio" type="radio" name="request-form-target" value="lose-weight" checked>
                     <span class="request-form__label">Похудение</span>
                   </label>
                 </li>
                 <li class="request-form__list-item">
                   <label class="request-form__field request-form__field--selectable">
-                    <input class="request-form__control visually-hidden radio" type="radio" name="request-form-target" value="get-weight">
-                    <span class="request-form__control-mark"></span>
+                    <input class="request-form__control radio" type="radio" name="request-form-target" value="get-weight">
                     <span class="request-form__label">Набор массы</span>
                   </label>
                 </li>
                 <li class="request-form__list-item">
                   <label class="request-form__field request-form__field--selectable">
-                    <input class="visually-hidden request-form__control radio" type="radio" name="request-form-target" value="unknown">
-                    <span class="request-form__control-mark"></span>
+                    <input class="request-form__control radio" type="radio" name="request-form-target" value="unknown">
                     <span class="request-form__label">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
@@ -122,29 +119,25 @@
               <ul class="request-form__list request-form__list--selectable">
                 <li class="request-form__list-item">
                   <label class="request-form__field request-form__field--selectable">
-                    <input class="request-form__control visually-hidden checkbox" type="checkbox" name="request-form-extra-sweetener" checked>
-                    <span class="request-form__control-mark"></span>
+                    <input class="request-form__control checkbox" type="checkbox" name="request-form-extra-sweetener" checked>
                     <span class="request-form__label">сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="request-form__list-item">
                   <label class="request-form__field request-form__field--selectable">
-                    <input class="request-form__control visually-hidden checkbox" type="checkbox" name="request-form-extra-water">
-                    <span class="request-form__control-mark"></span>
+                    <input class="request-form__control checkbox" type="checkbox" name="request-form-extra-water">
                     <span class="request-form__label">питьевая вода</span>
                   </label>
                 </li>
                 <li class="request-form__list-item">
                   <label class="request-form__field request-form__field--selectable">
-                    <input class="request-form__control visually-hidden checkbox" type="checkbox" name="request-form-extra-milk">
-                    <span class="request-form__control-mark"></span>
+                    <input class="request-form__control checkbox" type="checkbox" name="request-form-extra-milk">
                     <span class="request-form__label">молоко</span>
                   </label>
                 </li>
                 <li class="request-form__list-item">
                   <label class="request-form__field request-form__field--selectable">
-                    <input class="request-form__control visually-hidden checkbox" type="checkbox" name="request-form-extra-vitamins">
-                    <span class="request-form__control-mark"></span>
+                    <input class="request-form__control checkbox" type="checkbox" name="request-form-extra-vitamins">
                     <span class="request-form__label">витамины</span>
                   </label>
                 </li>
@@ -164,7 +157,7 @@
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </div>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=mymaps%3A4Iq6WtbrHHkK9hab1xfXVBgsAQQB6Fe9&amp;source=constructor" title="Мы на карте" width="100%" height="362" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=mymaps%3A4Iq6WtbrHHkK9hab1xfXVBgsAQQB6Fe9&amp;source=constructor" title="Мы на карте" width="100%" height="362"></iframe>
       </section>
     </main>
 

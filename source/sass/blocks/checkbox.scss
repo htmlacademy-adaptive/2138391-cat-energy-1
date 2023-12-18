@@ -1,0 +1,28 @@
+.checkbox {
+  appearance: none;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-border-checkbox-clickable;
+
+  &:focus {
+    outline: 1px solid $color-border-checkbox-focused;
+  }
+
+  &:hover {
+    border-color: $color-border-checkbox-hover;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:checked::before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+}

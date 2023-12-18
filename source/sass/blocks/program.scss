@@ -1,0 +1,13 @@
+.program__list {
+  @include list-reset;
+}
+
+.program__item {
+  background-color: $color-bg-program-item;
+  margin-bottom: 20px;
+  padding: 30px 33px 20px 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
