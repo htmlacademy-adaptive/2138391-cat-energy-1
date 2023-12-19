@@ -21,26 +21,26 @@
   gap: 20px;
 
   &::before {
-    content: '';
+    content: "";
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
   }
 
   &--healthy::before {
-    background-image: url("../../img/icon-leaf.svg");
+    background-image: url("../img/icon-leaf.svg");
   }
 
   &--easy::before {
-    background-image: url("../../img/icon-glass-bubbles.svg");
+    background-image: url("../img/icon-glass-bubbles.svg");
   }
 
   &--daily::before {
-    background-image: url("../../img/icon-fork-knife.svg");
+    background-image: url("../img/icon-fork-knife.svg");
   }
 
   &--quickly::before {
-    background-image: url("../../img/icon-clock.svg");
+    background-image: url("../img/icon-clock.svg");
   }
 }
 

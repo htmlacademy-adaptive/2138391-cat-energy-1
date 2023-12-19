@@ -2,18 +2,18 @@
   font-family: $font-secondary;
   text-align: center;
   color: $color-text-tertiary;
-  background-image: url("../../img/background-cat.jpg");
+  background-image: url("../img/background-cat.jpg");
   background-repeat: no-repeat;
   background-position: top center;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     z-index: -1;
     width: 100%;
     height: 302px;
-    background: linear-gradient(to right, #64A83C 50%, #62A63B 50%);
+    background: linear-gradient(to right, #64a83c 50%, #62a63b 50%);
   }
 }
 
