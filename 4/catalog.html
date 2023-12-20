@@ -10,15 +10,17 @@
   <body class="page-body">
     <header class="header">
       <div class="header__container container">
-        <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="img/logo-image.svg" width="33" height="38" alt="Логотип супер кот.">
-        </a>
-        <a class="header__logo" href="index.html">
-          <img class="header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
-        </a>
-        <button class="navigation__toggle navigation__toggle--closed" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="header__wrapper header__wrapper--nojs">
+          <a class="header__link" href="index.html">
+            <img class="header__logo-image" src="img/logo-image.svg" width="33" height="38" alt="Логотип супер кот.">
+          </a>
+          <a class="header__link" href="index.html">
+            <img class="header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
+          </a>
+          <button class="header__toggle header__toggle--closed" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
         <nav class="navigation navigation--nojs">
           <ul class="navigation__list navigation__list--closed">
             <li class="navigation__item">
@@ -330,6 +332,6 @@
         </a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
