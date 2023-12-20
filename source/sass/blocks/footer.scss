@@ -1,5 +1,5 @@
 .footer {
-  background-color: $color-bg-footer;
+  background-color: $light-color;
 }
 
 .footer__container {
@@ -16,7 +16,7 @@
   justify-content: center;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid $color-line-footer;
+  border-bottom: 1px solid $gray-400;
 
   &:focus {
     outline: none;
@@ -48,7 +48,7 @@
   width: 100%;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid $color-line-footer;
+  border-bottom: 1px solid $gray-400;
 }
 
 .footer__partner-logo {

@@ -1,5 +1,5 @@
 .example {
-  background-color: $color-bg-example;
+  background-color: $gray-50;
 }
 
 .example__container {
@@ -64,7 +64,7 @@
     font-size: 1.5rem;
     line-height: 1;
     font-weight: 400;
-    border: 1px solid $color-border-stats-desc;
+    border: 1px solid $gray-500;
     border-radius: 4px;
     padding-top: 14px;
     padding-bottom: 18px;

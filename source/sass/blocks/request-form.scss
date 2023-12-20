@@ -18,7 +18,7 @@
       bottom: -24px;
       width: calc(100% + 40px);
       height: 1px;
-      background-color: $color-line-light-request-form;
+      background-color: $gray-400;
     }
   }
 
@@ -32,7 +32,7 @@
       bottom: -19px;
       width: calc(100% + 40px);
       height: 1px;
-      background-color: $color-line-light-request-form;
+      background-color: $gray-400;
     }
   }
 
@@ -127,7 +127,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: $color-decoration-input;
+    background: $black-50;
   }
 
   &--email {
@@ -140,7 +140,7 @@
 }
 
 .request-form__control:focus + .request-form__control-icon::before {
-  background: $color-decoration-input-focus;
+  background: $bright-color;
 }
 
 .request-form__button {

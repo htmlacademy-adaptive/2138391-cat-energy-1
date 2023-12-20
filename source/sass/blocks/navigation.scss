@@ -29,9 +29,9 @@
   padding: 22px 55px;
   display: flex;
   justify-content: center;
-  border-top: 1px solid $color-line-nav;
-  border-bottom: 1px solid $color-line-nav;
-  background-color: $color-bg-nav;
+  border-top: 1px solid $gray-200;
+  border-bottom: 1px solid $gray-200;
+  background-color: $basic-color;
 
   &:first-child {
     border-bottom: none;
