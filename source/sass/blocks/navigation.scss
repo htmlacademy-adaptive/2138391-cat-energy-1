@@ -1,24 +1,27 @@
-.navigation__toggle {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  width: 24px;
-  height: 24px;
-  background-image: url("../../img/burger.svg");
-  background-repeat: no-repeat;
+.navigation {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+
+  &--nojs {
+    position: static;
+  }
+}
+
+.navigation--nojs .navigation__list {
+  display: block;
 }
 
 .navigation__list {
   @include list-reset;
-  position: absolute;
-  width: 320px;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background-color: $color-background-1;
 
   &--closed {
     display: none;
+  }
+
+  &--opened {
+    display: block;
   }
 }
 
@@ -26,20 +29,37 @@
   padding: 22px 55px;
   display: flex;
   justify-content: center;
-  border-top: 1px solid $color-border-1;
-  border-bottom: 1px solid $color-border-1;
+  border-top: 1px solid $gray-200;
+  border-bottom: 1px solid $gray-200;
+  background-color: $basic-color;
+
+  &:first-child {
+    border-bottom: none;
+  }
 
   &:last-child {
+    border-top: none;
     border-bottom: none;
   }
 }
 
+.navigation--nojs .navigation__item {
+  width: 320px;
+  margin-left: -20px;
+}
+
 .navigation__link {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  line-height: 20px;
+  font-family: $font-secondary;
+  font-size: 1.25rem;
+  line-height: 1;
   color: $color-text-secondary;
   text-transform: uppercase;
+
+
+  &[href]:focus {
+    opacity: 0.6;
+    outline: none;
+  }
 
   &[href]:hover {
     opacity: 0.6;

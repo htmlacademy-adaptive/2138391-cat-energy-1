@@ -1,30 +1,97 @@
-.header {
-  padding: 13px 20px;
+.header__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
 }
 
-.header__container {
+.header__wrapper {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  margin-bottom: 15px;
 }
 
-.header__logo {
-  display: flex;
-  align-items: center;
+.header__link {
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
 
-  &[href]:hover {
+  &:hover {
     opacity: 0.8;
   }
 
-  &[href]:active {
+  &:active {
     opacity: 0.6;
   }
 }
 
+.header__logo-image {
+  display: block;
+}
+
 .header__logo-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.header__toggle {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--closed::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    mask: url("../img/burger.svg") no-repeat center / contain;
+    background: $color-header-toggle-clickable;
+  }
+
+  &--closed:focus::before {
+    background: $color-header-toggle-focused;
+  }
+
+  &--closed:hover::before {
+    background: $color-header-toggle-hover;
+  }
+
+  &--closed:active {
+    opacity: 0.3;
+  }
+
+  &--opened::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    mask: url("../img/icon-nav-opened.svg") no-repeat center / contain;
+    background: $color-header-toggle-clickable;
+  }
+
+  &--opened:focus::before {
+    background: $color-header-toggle-focused;
+  }
+
+  &--opened:hover::before {
+    background: $color-header-toggle-hover;
+  }
+
+  &--opened:active {
+    opacity: 0.3;
+  }
+}
+
+.header__wrapper--nojs .header__toggle {
+  visibility: hidden;
 }

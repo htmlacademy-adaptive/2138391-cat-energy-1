@@ -1,0 +1,24 @@
+.button {
+  display: block;
+  width: 280px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:focus {
+    outline: 1px solid $color-border-btn-focused;
+  }
+
+  &--primary {
+    color: $color-text-tertiary;
+    background-color: $color-bg-btn-primary-clickable;
+
+    &:hover {
+      background-color: $color-bg-btn-primary-hover;
+    }
+
+    &:active {
+      color: rgba($basic-color, 0.3);
+    }
+  }
+}
