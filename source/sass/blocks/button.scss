@@ -2,7 +2,9 @@
   display: block;
   width: 280px;
   border: none;
+  padding: 10px 0;
   text-transform: uppercase;
+  text-align: center;
   cursor: pointer;
 
   &:focus {
@@ -15,6 +17,19 @@
 
     &:hover {
       background-color: $color-bg-btn-primary-hover;
+    }
+
+    &:active {
+      color: rgba($basic-color, 0.3);
+    }
+  }
+
+  &--secondary {
+    color: $color-text-primary;
+    background-color: $color-bg-btn-secondary-clickable;
+
+    &:hover {
+      background-color: $color-bg-btn-secondary-hover;
     }
 
     &:active {

@@ -1,3 +1,9 @@
+.contacts {
+  &--colorful {
+    background-color: $light-color;
+  }
+}
+
 .contacts__container {
   padding: 26px 0;
 }

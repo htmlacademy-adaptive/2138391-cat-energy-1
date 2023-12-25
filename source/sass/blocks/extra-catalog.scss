@@ -1,0 +1,44 @@
+.extra-catalog__container {
+  padding-top: 25px;
+}
+
+.extra-catalog__title {
+  font-family: $font-secondary;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 400;
+  color: $color-text-secondary;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.extra-catalog__list {
+  @include list-reset;
+  margin-bottom: 35px;
+}
+
+.extra-catalog__gift {
+  min-height: 290px;
+  background-image: url("../img/gift.jpg");
+  padding-top: 59px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/icon-gift.svg");
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+}
+
+.extra-catalog__gift-conditions {
+  margin: 0 auto;
+  width: 161px;
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 400;
+  color: $color-text-tertiary;
+  text-align: center;
+}

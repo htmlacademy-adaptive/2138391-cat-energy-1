@@ -1,0 +1,56 @@
+.product-card {
+  display: grid;
+  grid-template-areas: "image info"
+                        "button button";
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.product-card__wrapper {
+  grid-area: info;
+  width: 140px;
+}
+
+.product-card__title {
+  font-family: $font-secondary;
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 14px;
+  width: 76px;
+
+}
+
+.product-card__link {
+  color: $black-50;
+  text-align: center;
+  grid-area: image;
+  width: 140px;
+  align-self: center;
+}
+
+.product-card__info {
+  margin: 0;
+}
+
+.product-card__info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  line-height: 1.33;
+}
+
+.product-card__info-value {
+  margin-left: 0;
+}
+
+.product-card__button {
+  font-family: $font-secondary;
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 400;
+  margin-top: 17px;
+  grid-area: button;
+}
