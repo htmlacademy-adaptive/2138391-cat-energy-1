@@ -25,18 +25,16 @@
 
   &--more {
     padding: 25px 0;
-  }
-}
 
-.catalog__item--more {
-  &::before {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin: 0 auto;
-    margin-bottom: 23px;
-    background-image: url("../img/icon-plus.svg");
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+      margin-bottom: 23px;
+      background-image: url("../img/icon-plus.svg");
+    }
   }
 }
 

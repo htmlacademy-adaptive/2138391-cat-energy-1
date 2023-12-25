@@ -1,7 +1,7 @@
 .product-card {
   display: grid;
   grid-template-areas: "image info"
-                        "button button";
+    "button button";
   padding-top: 20px;
   padding-bottom: 25px;
 }
@@ -20,7 +20,6 @@
   margin-top: 0;
   margin-bottom: 14px;
   width: 76px;
-
 }
 
 .product-card__link {
