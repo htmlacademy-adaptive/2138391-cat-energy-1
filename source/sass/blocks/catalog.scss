@@ -17,11 +17,6 @@
 }
 
 .catalog__item {
-  border-top: 1px solid $gray-100;
-
-  &:last-child {
-    border-bottom: 1px solid $gray-100;
-  }
 
   &--more {
     padding: 25px 0;
