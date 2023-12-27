@@ -4,6 +4,7 @@
   left: 0;
   top: 100%;
   width: 100%;
+  background-color: $basic-color;
 
   &--nojs {
     position: static;
@@ -27,19 +28,17 @@
 }
 
 .navigation__item {
-  padding: 22px 55px;
   display: flex;
   justify-content: center;
-  border-top: 1px solid $gray-200;
+  padding-top: 22px;
+  padding-bottom: 24px;
   border-bottom: 1px solid $gray-200;
-  background-color: $basic-color;
 
   &:first-child {
-    border-bottom: none;
+    border-top: 1px solid $gray-200;
   }
 
   &:last-child {
-    border-top: none;
     border-bottom: none;
   }
 }
