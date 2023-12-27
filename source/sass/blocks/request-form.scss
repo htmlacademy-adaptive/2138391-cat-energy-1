@@ -9,30 +9,36 @@
   position: relative;
 
   &--personal-data {
-    margin-bottom: 46px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: -20px;
-      bottom: -24px;
-      width: calc(100% + 40px);
-      height: 1px;
-      background-color: $gray-400;
-    }
+    margin-bottom: 24px;
   }
 
   &--target {
-    margin-bottom: 45px;
+    padding-top: 22px;
+    padding-bottom: 19px;
+    margin-bottom: 26px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 1000px;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $gray-400;
+      box-shadow: 1000px 0 $gray-400;
+    }
 
     &::after {
       content: "";
-      position: absolute;
-      left: -20px;
-      bottom: -19px;
-      width: calc(100% + 40px);
+      display: block;
+      width: 1000px;
       height: 1px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
       background-color: $gray-400;
+      box-shadow: 1000px 0 $gray-400;
     }
   }
 
@@ -56,20 +62,25 @@
   line-height: 1.08;
   color: $color-text-secondary;
   margin-bottom: 36px;
+  padding-right: 20px;
+  background-color: $basic-color;
+  box-shadow: -20px 0 $basic-color;
 
-  &::after {
+  &::before {
     content: "";
     display: block;
-    width: 100vh;
+    width: 1000px;
     height: 2px;
-    position: absolute;
-    top: 50%;
-    left: calc(100% + 20px);
-    transform: translate(0, 50%);
     background-color: $bright-color;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: 0;
+    transform: translate(0, 50%);
+    box-shadow: 1000px 0 $bright-color;
   }
 
-  &--wide::after {
+  &--wide::before {
     top: 25%;
   }
 }

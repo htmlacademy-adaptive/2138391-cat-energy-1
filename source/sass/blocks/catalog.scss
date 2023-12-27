@@ -17,19 +17,45 @@
 }
 
 .catalog__item {
+  position: relative;
 
-  &--more {
-    padding: 25px 0;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1000px;
+    height: 1px;
+    background-color: $gray-100;
+    box-shadow: 1000px 0px $gray-100;
+  }
 
-    &::before {
-      content: "";
-      display: block;
-      width: 30px;
-      height: 30px;
-      margin: 0 auto;
-      margin-bottom: 23px;
-      background-image: url("../img/icon-plus.svg");
-    }
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1000px;
+    height: 1px;
+    background-color: $gray-100;
+    box-shadow: 1000px 0 $gray-100;
+  }
+}
+
+.catalog__wrapper {
+  padding: 25px 0;
+
+  &::before {
+    content: "";
+    display: block;
+    position: static;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    background-image: url("../img/icon-plus.svg");
+    background-color: transparent;
   }
 }
 
