@@ -9,6 +9,15 @@
   &--nojs {
     position: static;
   }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+  }
 }
 
 .navigation--nojs .navigation__list {
@@ -18,20 +27,30 @@
 .navigation__list {
   @include list-reset;
 
-  &--closed {
-    display: none;
+  @media (max-width: $mobile-width-only) {
+    &--closed {
+      display: none;
+    }
+
+    &--opened {
+      display: block;
+    }
   }
 
-  &--opened {
-    display: block;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: end;
   }
 }
 
 .navigation__item {
   display: flex;
   justify-content: center;
-  padding-top: 22px;
-  padding-bottom: 24px;
   border-bottom: 1px solid $gray-200;
 
   &:first-child {
@@ -41,14 +60,32 @@
   &:last-child {
     border-bottom: none;
   }
-}
 
-.navigation--nojs .navigation__item {
-  width: 320px;
-  margin-left: -20px;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    border: none;
+
+    &:first-child {
+      border: none;
+    }
+
+    &--current::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $bright-color;
+    }
+  }
 }
 
 .navigation__link {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
   font-family: $font-secondary;
   font-size: 1.25rem;
   line-height: 1;
@@ -67,5 +104,17 @@
 
   &[href]:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+    font-size: 1.13rem;
+    line-height: 1.33;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 0;
+    font-size: 1.25rem;
+    line-height: 1;
   }
 }

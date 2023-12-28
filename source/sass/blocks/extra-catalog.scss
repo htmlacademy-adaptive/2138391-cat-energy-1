@@ -17,17 +17,17 @@
   box-shadow: -20px 0 $basic-color;
 
   &::before {
-    content:"";
+    content: "";
     display: block;
     height: 2px;
-    width: 1000px;
+    width: 1500px;
     background-color: $bright-color;
     position: absolute;
     z-index: -1;
     top: 50%;
     right: 0;
     transform: translate(0, 50%);
-    box-shadow: 1000px 0 $bright-color
+    box-shadow: 1500px 0 $bright-color;
   }
 }
 
@@ -39,6 +39,7 @@
 .extra-catalog__gift {
   min-height: 290px;
   background-image: url("../img/gift.jpg");
+  background-repeat: no-repeat;
   padding-top: 59px;
   padding-bottom: 20px;
 
