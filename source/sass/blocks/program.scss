@@ -1,13 +1,15 @@
 .program__list {
   @include list-reset;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-.program__item {
-  background-color: $light-color;
-  margin-bottom: 20px;
-  padding: 30px 33px 20px 20px;
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
 
-  &:last-child {
-    margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
   }
 }
