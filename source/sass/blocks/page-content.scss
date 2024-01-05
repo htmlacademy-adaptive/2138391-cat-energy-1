@@ -4,10 +4,10 @@
 
 .page-content__program {
   margin-bottom: 20px;
-}
 
-.page-content__features {
-  margin-bottom: 49px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .page-content__extra-catalog {

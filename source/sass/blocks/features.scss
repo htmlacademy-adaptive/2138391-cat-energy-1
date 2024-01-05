@@ -1,3 +1,22 @@
+.features {
+  @media (min-width: $tablet-width) and (max-width:$desktop-width) {
+    border-bottom: 1px solid $gray-200;
+  }
+}
+
+.features__container {
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 47px;
+    padding-right: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 69px;
+  }
+}
+
 .features__title {
   font-family: $font-secondary;
   font-size: 2.25rem;
@@ -6,25 +25,76 @@
   color: $color-text-secondary;
   margin-top: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 3.75rem;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
 }
 
 .features__list {
   @include list-reset;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 26px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    column-gap: 129px;
+    row-gap: 37px;
+    counter-reset: number 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 73px;
+    row-gap: 0;
+  }
 }
 
 .features__item {
   display: flex;
+  width: 100%;
   align-items: center;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    min-height: 280px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    counter-increment: number;
+    position: relative;
+
+    &::after {
+      content: counter(number);
+      font-family: $font-secondary;
+      font-size: 17.5rem;
+      line-height: 1;
+      color: $light-color;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
 
   &::before {
     content: "";
     width: 60px;
     height: 60px;
+    flex-shrink: 0;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
   }
 
   &--healthy::before {
@@ -42,10 +112,33 @@
   &--quickly::before {
     background-image: url("../img/icon-clock.svg");
   }
+
+  @media (min-width: $tablet-width) {
+
+    &--healthy::before {
+      background-image: url("../img/icon-leaf-size-m.svg");
+    }
+
+    &--easy::before {
+      background-image: url("../img/icon-glass-bubbles-size-m.svg");
+    }
+
+    &--daily::before {
+      background-image: url("../img/icon-fork-knife-size-m.svg");
+    }
+
+    &--quickly::before {
+      background-image: url("../img/icon-clock-size-m.svg");
+    }
+  }
 }
 
 .features__item-text {
-  width: 200px;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 }
