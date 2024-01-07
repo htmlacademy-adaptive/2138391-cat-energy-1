@@ -1,5 +1,5 @@
 .features {
-  @media (min-width: $tablet-width) and (max-width:$desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     border-bottom: 1px solid $gray-200;
   }
 }
@@ -114,7 +114,6 @@
   }
 
   @media (min-width: $tablet-width) {
-
     &--healthy::before {
       background-image: url("../img/icon-leaf-size-m.svg");
     }
