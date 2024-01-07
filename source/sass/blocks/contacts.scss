@@ -1,4 +1,6 @@
 .contacts {
+  position: relative;
+
   &--colorful {
     background-color: $light-color;
   }
@@ -6,11 +8,33 @@
 
 .contacts__container {
   padding: 26px 0;
+  background-color: $basic-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    padding-left: 80px;
+    padding-right: 78px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
 }
 
 .contacts__wrapper {
   display: flex;
   gap: 18px;
+
+  @media (min-width: $tablet-width) {
+    gap: 308px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 87px;
+  }
 }
 
 .contacts__offer {
@@ -19,9 +43,26 @@
   line-height: 1.25;
   color: $color-text-secondary;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
 }
 
 .contacts__address {
+  flex-shrink: 0;
   font-style: normal;
   line-height: 1.43;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1rem;
+    line-height: 1.25;
+    text-align: end;
+
+    span {
+      display: block;
+      margin-top: 32px;
+    }
+  }
 }
