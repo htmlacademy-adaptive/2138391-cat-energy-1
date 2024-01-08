@@ -8,6 +8,17 @@
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
 }
 
 .footer__logo {
@@ -17,6 +28,7 @@
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid $gray-400;
+  cursor: pointer;
 
   &:focus {
     outline: none;
@@ -42,6 +54,19 @@
   &:active::before {
     background: $color-footer-logo-pressed;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    justify-content: start;
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-right: 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 362px;
+  }
 }
 
 .footer__social {
@@ -49,6 +74,13 @@
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid $gray-400;
+
+  @media (min-width: $tablet-width) {
+    width: 236px;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
 }
 
 .footer__partner-logo {
@@ -87,5 +119,14 @@
 
   &:hover::after {
     background: $color-partner-logo-hover;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    margin-left: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 322px;
   }
 }
