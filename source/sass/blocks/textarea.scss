@@ -14,4 +14,10 @@
   &:hover {
     border-color: $color-border-textarea-hover;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.25rem;
+    padding: 11px 20px;
+    padding-bottom: 5px;
+  }
 }

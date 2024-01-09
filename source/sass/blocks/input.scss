@@ -17,4 +17,10 @@
   &--decorated {
     padding-right: 35px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 11px 20px;
+  }
 }
