@@ -10,6 +10,18 @@
   }
 }
 
+.page-content__catalog {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+}
+
 .page-content__extra-catalog {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
 }
