@@ -16,6 +16,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .page-content__extra-catalog {
@@ -23,5 +27,9 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 87px;
   }
 }

@@ -1,3 +1,11 @@
+@media (min-width: $desktop-width) {
+  .extra-catalog__wrapper {
+    display: grid;
+    grid-template-columns: 895px 245px;
+    column-gap: 80px;
+  }
+}
+
 .extra-catalog__title {
   display: inline-block;
   position: relative;
@@ -28,10 +36,16 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 40px;
+    padding-left: 40px;
+    box-shadow: none;
     font-size: 2.25rem;
     line-height: 1;
-    box-shadow: -40px 0 $basic-color;
     margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    box-shadow: -40px 0 $basic-color;
   }
 }
 
@@ -41,6 +55,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -77,6 +95,17 @@
       margin: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/gift-bg-size-xs.jpg");
+    padding: 56px 42px 43px 42px;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before {
+      margin-bottom: 46px;
+    }
+  }
 }
 
 .extra-catalog__gift-conditions {
@@ -91,5 +120,9 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }

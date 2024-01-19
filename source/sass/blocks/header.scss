@@ -20,7 +20,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
+    padding-top: 56px;
+    justify-content: start;
   }
 }
 
@@ -37,7 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 205px;
+    width: 202px;
   }
 }
 

@@ -16,7 +16,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 895px;
+    width: 885px;
+    margin-left: 131px;
   }
 }
 
@@ -78,6 +79,12 @@
       right: 0;
       height: 2px;
       background-color: $bright-color;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--current::before {
+      bottom: -5px;
     }
   }
 }

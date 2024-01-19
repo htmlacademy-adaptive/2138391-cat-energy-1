@@ -21,6 +21,10 @@ img {
 iframe {
   border: none;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .visually-hidden {
