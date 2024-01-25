@@ -24,14 +24,14 @@
     content: "";
     display: block;
     height: 2px;
-    width: 1500px;
+    width: 100vw;
     background-color: $bright-color;
     position: absolute;
     z-index: -1;
     top: 50%;
     right: 0;
     transform: translate(0, 50%);
-    box-shadow: 1500px 0 $bright-color;
+    box-shadow: 100vw 0 $bright-color;
   }
 
   @media (min-width: $tablet-width) {

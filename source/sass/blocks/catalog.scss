@@ -54,10 +54,10 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 1500px;
+      width: 100vw;
       height: 1px;
       background-color: $gray-100;
-      box-shadow: 1500px 0 $gray-100;
+      box-shadow: 100vw 0 $gray-100;
     }
 
     &:last-child::after {
@@ -65,10 +65,10 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 1500px;
+      width: 100vw;
       height: 1px;
       background-color: $gray-100;
-      box-shadow: 1500px 0 $gray-100;
+      box-shadow: 100vw 0 $gray-100;
     }
   }
 

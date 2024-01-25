@@ -27,25 +27,25 @@
     &::before {
       content: "";
       display: block;
-      width: 1500px;
+      width: 100vw;
       height: 1px;
       position: absolute;
       top: 0;
       right: 0;
       background-color: $gray-400;
-      box-shadow: 1500px 0 $gray-400;
+      box-shadow: 100vw 0 $gray-400;
     }
 
     &::after {
       content: "";
       display: block;
-      width: 1500px;
+      width: 100vw;
       height: 1px;
       position: absolute;
       bottom: 0;
       right: 0;
       background-color: $gray-400;
-      box-shadow: 1500px 0 $gray-400;
+      box-shadow: 100vw 0 $gray-400;
     }
   }
 
@@ -167,7 +167,7 @@
   &::before {
     content: "";
     display: block;
-    width: 1500px;
+    width: 100vw;
     height: 2px;
     background-color: $bright-color;
     position: absolute;
@@ -175,7 +175,7 @@
     top: 50%;
     right: 0;
     transform: translate(0, 50%);
-    box-shadow: 1500px 0 $bright-color;
+    box-shadow: 100vw 0 $bright-color;
   }
 
   &--high::before {
