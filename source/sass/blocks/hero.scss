@@ -90,11 +90,6 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
 }
 
 .hero__image {
@@ -134,10 +129,5 @@
     padding-top: 14px;
     padding-bottom: 14px;
     width: 244px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
   }
 }

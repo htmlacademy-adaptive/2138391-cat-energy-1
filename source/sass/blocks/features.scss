@@ -42,7 +42,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 129px;
     row-gap: 37px;
     counter-reset: number 0;
@@ -61,40 +61,12 @@
   align-items: center;
   gap: 20px;
 
-  @media (min-width: $tablet-width) {
-    display: block;
-    min-height: 280px;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    counter-increment: number;
-    position: relative;
-
-    &::after {
-      content: counter(number);
-      font-family: $font-secondary;
-      font-size: 17.5rem;
-      line-height: 1;
-      color: $light-color;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-    }
-  }
-
   &::before {
     content: "";
     width: 60px;
     height: 60px;
     flex-shrink: 0;
     background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-      width: 80px;
-      height: 80px;
-      margin-bottom: 31px;
-    }
   }
 
   &--healthy::before {
@@ -114,6 +86,20 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: block;
+    min-height: 280px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    counter-increment: number;
+    position: relative;
+
+    &::before {
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+
     &--healthy::before {
       background-image: url("../img/icon-leaf-size-m.svg");
     }
@@ -128,6 +114,18 @@
 
     &--quickly::before {
       background-image: url("../img/icon-clock-size-m.svg");
+    }
+
+    &::after {
+      content: counter(number);
+      font-family: $font-secondary;
+      font-size: 17.5rem;
+      line-height: 1;
+      color: $light-color;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
     }
   }
 }

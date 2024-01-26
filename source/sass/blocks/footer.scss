@@ -58,10 +58,10 @@
   @media (min-width: $tablet-width) {
     width: 130px;
     justify-content: start;
-    padding: 0;
-    margin: 0;
-    border: none;
+    padding-bottom: 0;
     margin-right: 105px;
+    margin-bottom: 0;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,8 +77,8 @@
 
   @media (min-width: $tablet-width) {
     width: 255px;
-    padding: 0;
-    margin: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
     border: none;
   }
 }
