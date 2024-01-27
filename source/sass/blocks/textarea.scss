@@ -1,0 +1,24 @@
+.textarea {
+  font-family: $font-secondary;
+  font-size: 1rem;
+  line-height: 1.13;
+  padding: 14px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  border-color: $color-border-textarea-clickable;
+  resize: none;
+
+  &:focus {
+    outline: 1px solid $color-border-textarea-focused;
+  }
+
+  &:hover {
+    border-color: $color-border-textarea-hover;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.25rem;
+    padding: 11px 20px;
+    padding-bottom: 5px;
+  }
+}

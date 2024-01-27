@@ -1,25 +1,80 @@
 // Переменные для шрифтов
-$font-basic: 700 14px / 18px "Lato", sans-serif;
+
+$font-basic: "Lato", "Arial", sans-serif;
+$font-secondary: "Oswald", "Arial", sans-serif;
+
+//палитра цветов
+
+$basic-color: #ffffff;
+$bright-color: #68b738;
+$light-color: #f2f2f2;
+$error-color: #ff8282;
+$gray-50: #eaeaea;
+$gray-100: #ebebeb;
+$gray-200: #e6e6e6;
+$gray-300: #e7e7e7;
+$gray-400: #d9d9d9;
+$gray-500: #cdcdcd;
+$dark-gray: #444444;
+$dove-gray: #666666;
+$dove-gray-light: #6b6b6b;
+$ship-gray: #403f43;
+$mine-shaft: #3e3e3e;
+$alto: #d3d3d3;
+$black-50: #222222;
+$black-100: #111111;
+$black-200: #000000;
+$apple: #5eaa2f;
+$silver: #bababa;
 
 // Переменные для текста
-$color-text-primary: #444444;
-$color-text-secondary: #000000;
+$color-text-primary: $dark-gray;
+$color-text-secondary: $black-200;
+$color-text-tertiary: $basic-color;
 
-//Переменные для фонов
-$color-background-1: #ffffff;
+// Переменные для интерактивных элементов
+$color-header-toggle-clickable: $black-200;
+$color-header-toggle-focused: $mine-shaft;
+$color-header-toggle-hover: $mine-shaft;
 
-//Переменные для границ
+$color-footer-logo-clickable: $black-100;
+$color-footer-logo-focused: $mine-shaft;
+$color-footer-logo-hover: $mine-shaft;
+$color-footer-logo-pressed: $dove-gray-light;
 
-$color-border-1: #e6e6e6;
-$color-border-2: #d9d9d9;
+$color-partner-logo-clickable: $dove-gray;
+$color-partner-logo-focused: $bright-color;
+$color-partner-logo-hover: $bright-color;
 
-// Переменные для интерактиынх элементов
-$color-footer-logo-clickable: #111111;
-$color-footer-logo-hover: #3e3e3e;
-$color-footer-logo-pressed: #6b6b6b;
+$color-social-link-clickable: $dove-gray;
+$color-social-link-hover: $bright-color;
 
-$color-partner-logo-clickable: #666666;
-$color-partner-logo-hover: #68b738;
+$color-border-input-clickable: $gray-300;
+$color-border-input-focused: $dark-gray;
+$color-border-input-hover: $gray-500;
 
-$color-social-link-clickable: #666666;
-$color-social-link-hover: #68b738;
+$color-border-radio-clickable: $gray-500;
+$color-border-radio-focused: $dark-gray;
+$color-border-radio-hover: $silver;
+$color-radio-active: $bright-color;
+
+$color-border-textarea-clickable: $gray-300;
+$color-border-textarea-focused: $dark-gray;
+$color-border-textarea-hover: $gray-500;
+
+$color-border-checkbox-clickable: $gray-500;
+$color-border-checkbox-focused: $dark-gray;
+$color-border-checkbox-hover: $silver;
+
+$color-border-btn-focused: $dark-gray;
+
+$color-bg-btn-primary-clickable: $bright-color;
+$color-bg-btn-primary-hover: $apple;
+
+$color-bg-btn-secondary-clickable: $light-color;
+$color-bg-btn-secondary-hover: $gray-100;
+
+// Переменные для размеров экрана
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$desktop-width: 1440px;

@@ -9,14 +9,18 @@
   <body class="page-body">
     <header class="header">
       <div class="header__container container">
-        <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="img/logo-image.svg" width="33" height="38" alt="Логотип супер кот.">
-          <img class="header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
-        </a>
-        <nav class="navigation">
-          <button class="navigation__toggle" type="button">
+        <div class="header__wrapper header__wrapper--nojs">
+          <a class="header__link header__link--image" href="index.html">
+            <img class="header__logo-image" src="img/logo-image.svg" width="33" height="38" alt="Логотип супер кот.">
+          </a>
+          <a class="header__link" href="index.html">
+            <img class="header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
+          </a>
+          <button class="header__toggle header__toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
+        </div>
+        <nav class="navigation navigation--nojs">
           <ul class="navigation__list navigation__list--closed">
             <li class="navigation__item">
               <a class="navigation__link" href="index.html">Главная</a>
@@ -24,8 +28,8 @@
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__item--current">Подбор программы</a>
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -33,125 +37,127 @@
     </header>
 
     <main class="page-content">
-      <section class="programm-request">
-        <div class="container">
-          <h1 class="programm-request__title">Подбор программы</h1>
-          <p class="programm-request__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <form class="programm-request__form request-form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="request-form__group">
+      <section class="program-request">
+        <div class="container program-request__container">
+          <h1 class="program-request__title">Подбор программы</h1>
+          <p class="program-request__description">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
+          <form class="program-request__form request-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="request-form__group request-form__group--personal-data">
               <legend class="visually-hidden">Персональные данные</legend>
-              <ul class="request-form__list">
+              <ul class="request-form__list request-form__list--fillable">
                 <li class="request-form__list-item">
-                  <label class="request-form__field form-field">
-                    <span class="form-field__label">Имя:<sup>*</sup></span>
-                    <input class="form-field__control input" type="text" name="request-form-name" placeholder="Барсик" required>
+                  <label class="request-form__field request-form__field--fillable">
+                    <span class="request-form__label">Имя:<sup>*</sup></span>
+                    <input class="request-form__control input" type="text" name="request-form-name" placeholder="Барсик" required>
                   </label>
                 </li>
                 <li class="request-form__list-item">
-                  <label class="request-form__field form-field">
-                    <span class="form-field__label">Вес (кг):<sup>*</sup></span>
-                    <input class="form-field__control input" type="number" name="request-form-weight" placeholder="7" min="3" max="100" required>
+                  <label class="request-form__field request-form__field--fillable">
+                    <span class="request-form__label">Вес (кг):<sup>*</sup></span>
+                    <input class="request-form__control input" type="number" name="request-form-weight" placeholder="7" min="3" max="100" required>
                   </label>
                 </li>
                 <li class="request-form__list-item">
-                  <label class="request-form__field form-field">
-                    <span class="form-field__label">Возраст (лет):</span>
-                    <input class="form-field__control input" type="number" name="request-form-age" placeholder="7" min="0" max="30">
+                  <label class="request-form__field request-form__field--fillable">
+                    <span class="request-form__label">Возраст (лет):</span>
+                    <input class="request-form__control input" type="number" name="request-form-age" placeholder="7" min="0" max="30">
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="request-form__group">
+            <fieldset class="request-form__group request-form__group--target">
               <legend class="visually-hidden">Ваша цель</legend>
-              <ul class="request-form__list">
+              <ul class="request-form__list request-form__list--selectable">
                 <li class="request-form__list-item">
-                  <label class="request-form__field form-field">
-                    <input class="form-field__control radio" type="radio" name="request-form-target" value="lose-weight" checked>
-                    <span class="form-field__label">Похудение</span>
+                  <label class="request-form__field request-form__field--selectable">
+                    <input class="request-form__control radio" type="radio" name="request-form-target" value="lose-weight" checked>
+                    <span class="request-form__label">Похудение</span>
                   </label>
                 </li>
                 <li class="request-form__list-item">
-                  <label class="request-form__field form-field">
-                    <input class="form-field__control radio" type="radio" name="request-form-target" value="get-weight">
-                    <span class="form-field__label">Набор массы</span>
+                  <label class="request-form__field request-form__field--selectable">
+                    <input class="request-form__control radio" type="radio" name="request-form-target" value="get-weight">
+                    <span class="request-form__label">Набор массы</span>
                   </label>
                 </li>
                 <li class="request-form__list-item">
-                  <label class="request-form__field form-field">
-                    <input class="form-field__control radio" type="radio" name="request-form-target" value="unknown">
-                    <span class="form-field__label">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="request-form__group">
-              <legend class="request-form__group-name">Контактные данные <br> (владельца кота)</legend>
-              <ul class="request-form__list">
-                <li class="request-form__list-item">
-                  <label class="request-form__field form-field">
-                    <span class="form-field__label">E-mail:<sup>*</sup></span>
-                    <input class="form-field__control input" type="email" name="request-form-mail" placeholder="kuklachev@gmail.com" required>
-                  </label>
-                </li>
-                <li class="request-form__list-item">
-                  <label class="request-form__field form-field">
-                    <span class="form-field__label">Телефон:<sup>*</sup></span>
-                    <input class="form-field__control input" type="tel" name="request-form-phone" placeholder="8 (960) 900-60-90" required>
+                  <label class="request-form__field request-form__field--selectable">
+                    <input class="request-form__control radio" type="radio" name="request-form-target" value="unknown">
+                    <span class="request-form__label">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="request-form__group">
+            <fieldset class="request-form__group request-form__group--feedback-data">
+              <legend class="request-form__group-name request-form__group-name--high">Контактные данные <br> (владельца кота)</legend>
+              <ul class="request-form__list request-form__list--fillable">
+                <li class="request-form__list-item">
+                  <label class="request-form__field request-form__field--fillable">
+                    <span class="request-form__label">E-mail:<sup>*</sup></span>
+                    <input class="request-form__control input input--decorated" type="email" name="request-form-mail" placeholder="kuklachev@gmail.com" required>
+                    <span class="request-form__control-icon request-form__control-icon--email"></span>
+                  </label>
+                </li>
+                <li class="request-form__list-item">
+                  <label class="request-form__field request-form__field--fillable">
+                    <span class="request-form__label">Телефон:<sup>*</sup></span>
+                    <input class="request-form__control input input--decorated" type="tel" name="request-form-phone" placeholder="8 (960) 900-60-90" required>
+                    <span class="request-form__control-icon request-form__control-icon--phone"></span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="request-form__group request-form__group--comment">
               <legend class="request-form__group-name">Комментарий</legend>
-              <label class="request-form__field form-field">
+              <label class="request-form__field">
                 <span class="visually-hidden">Поле для комментария</span>
-                <textarea class="form-field__control textarea" name="request-form-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="request-form__control textarea" name="request-form-comment" placeholder="Расскажите обо всех повадках кота" rows="7"></textarea>
               </label>
             </fieldset>
-            <fieldset class="request-form__group">
+            <fieldset class="request-form__group request-form__group--additional">
               <legend class="request-form__group-name">Дополнительно</legend>
-              <ul class="request-form__list">
+              <ul class="request-form__list request-form__list--selectable">
                 <li class="request-form__list-item">
-                  <label class="request-form__field form-field">
-                    <input class="form-field__control checkbox" type="checkbox" name="request-form-extra-sweetener" checked>
-                    <span class="form-field__label">сахарозаменитель</span>
+                  <label class="request-form__field request-form__field--selectable">
+                    <input class="request-form__control checkbox" type="checkbox" name="request-form-extra-sweetener" checked>
+                    <span class="request-form__label">сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="request-form__list-item">
-                  <label class="request-form__field form-field">
-                    <input class="form-field__control checkbox" type="checkbox" name="request-form-extra-water">
-                    <span class="form-field__label">питьевая вода</span>
+                  <label class="request-form__field request-form__field--selectable">
+                    <input class="request-form__control checkbox" type="checkbox" name="request-form-extra-water">
+                    <span class="request-form__label">питьевая вода</span>
                   </label>
                 </li>
                 <li class="request-form__list-item">
-                  <label class="request-form__field form-field">
-                    <input class="form-field__control checkbox" type="checkbox" name="request-form-extra-milk">
-                    <span class="form-field__label">молоко</span>
+                  <label class="request-form__field request-form__field--selectable">
+                    <input class="request-form__control checkbox" type="checkbox" name="request-form-extra-milk">
+                    <span class="request-form__label">молоко</span>
                   </label>
                 </li>
                 <li class="request-form__list-item">
-                  <label class="request-form__field form-field">
-                    <input class="form-field__control checkbox" type="checkbox" name="request-form-extra-vitamins">
-                    <span class="form-field__label">витамины</span>
+                  <label class="request-form__field request-form__field--selectable">
+                    <input class="request-form__control checkbox" type="checkbox" name="request-form-extra-vitamins">
+                    <span class="request-form__label">витамины</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <button class="request-form__button button button--primary" type="submit">Отправить заявку</button>
-            <div class="request-form__required-fields-info"><sup>*</sup> — Обязательные поля</div>
+            <span class="request-form__required-fields-info"><sup>*</sup> — Обязательные поля</span>
           </form>
         </div>
       </section>
 
-      <section class="contacts">
-        <div class="container">
+      <section class="contacts contacts--colorful">
+        <div class="container contacts__container">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper">
-            <div class="contacts__offer">Приглашаем к сотрудничеству дилеров!</div>
-            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+            <div class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</div>
+            <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> <span>Санкт-Петербург</span> </address>
           </div>
-          <img class="contacts__map" src="img/map.png" width="320" height="362" alt="Мы на карте">
         </div>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=mymaps%3A4Iq6WtbrHHkK9hab1xfXVBgsAQQB6Fe9&amp;source=constructor" title="Мы на карте" width="280" height="362"></iframe>
       </section>
     </main>
 
@@ -184,5 +190,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

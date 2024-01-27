@@ -1,11 +1,24 @@
 .footer {
-  padding: 40px 20px;
+  background-color: $light-color;
 }
 
 .footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-top: 57px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
 }
 
 .footer__logo {
@@ -14,15 +27,24 @@
   justify-content: center;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid $color-border-2;
+  border-bottom: 1px solid $gray-400;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 
   &::before {
     content: "";
     display: block;
     width: 128px;
     height: 24px;
-    mask: url("../../img/footer-logo.svg") no-repeat center / contain;
+    mask: url("../img/footer-logo.svg") no-repeat center / contain;
     background: $color-footer-logo-clickable;
+  }
+
+  &:focus::before {
+    background: $color-footer-logo-focused;
   }
 
   &:hover::before {
@@ -32,13 +54,33 @@
   &:active::before {
     background: $color-footer-logo-pressed;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    justify-content: start;
+    padding-bottom: 0;
+    margin-right: 105px;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 362px;
+  }
 }
 
 .footer__social {
   width: 100%;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid $color-border-2;
+  border-bottom: 1px solid $gray-400;
+
+  @media (min-width: $tablet-width) {
+    width: 255px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
 }
 
 .footer__partner-logo {
@@ -46,6 +88,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before {
     content: "HTML Academy";
@@ -59,15 +109,24 @@
     display: block;
     width: 27px;
     height: 34px;
-    mask: url("../../img/academy-logo.svg") no-repeat center / contain;
+    mask: url("../img/academy-logo.svg") no-repeat center / contain;
     background: $color-partner-logo-clickable;
+  }
+
+  &:focus::after {
+    background: $color-partner-logo-focused;
   }
 
   &:hover::after {
     background: $color-partner-logo-hover;
   }
 
-  &:active {
-    opacity: 0.3;
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    margin-left: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 322px;
   }
 }

@@ -1,0 +1,26 @@
+.input {
+  font-family: $font-secondary;
+  font-size: 1rem;
+  line-height: 1.13;
+  padding: 14px 15px 13px 15px;
+  border: 1px solid $color-border-input-clickable;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: 1px solid $color-border-input-focused;
+  }
+
+  &:hover {
+    border-color: $color-border-input-hover;
+  }
+
+  &--decorated {
+    padding-right: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 11px 20px;
+  }
+}

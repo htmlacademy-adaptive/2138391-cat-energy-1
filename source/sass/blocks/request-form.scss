@@ -1,0 +1,342 @@
+.request-form {
+  font-family: $font-secondary;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+    row-gap: 70px;
+  }
+}
+
+.request-form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: relative;
+
+  &--personal-data {
+    margin-bottom: 24px;
+  }
+
+  &--target {
+    padding-top: 22px;
+    padding-bottom: 19px;
+    margin-bottom: 26px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $gray-400;
+      box-shadow: 100vw 0 $gray-400;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: $gray-400;
+      box-shadow: 100vw 0 $gray-400;
+    }
+  }
+
+  &--feedback-data {
+    margin-bottom: 24px;
+  }
+
+  &--comment {
+    margin-bottom: 23px;
+  }
+
+  &--additional {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--personal-data {
+      margin-bottom: 72px;
+    }
+
+    &--target {
+      margin-bottom: 65px;
+      padding: 23px 27px 27px 27px;
+      border: 1px solid $gray-300;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &--feedback-data {
+      margin-bottom: 65px;
+
+      .request-form__group-name {
+        margin-bottom: 76px;
+      }
+    }
+
+    &--comment {
+      margin-bottom: 65px;
+
+      .request-form__group-name {
+        margin-bottom: 87px;
+      }
+    }
+
+    &--additional {
+      margin-bottom: 54px;
+
+      .request-form__group-name {
+        margin-bottom: 57px;
+      }
+
+      .request-form__list {
+        display: grid;
+        grid-template-columns: 270px 270px;
+        column-gap: 75px;
+        row-gap: 32px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--personal-data {
+      margin-bottom: 0;
+    }
+
+    &--target {
+      margin-bottom: 0;
+    }
+
+    &--feedback-data {
+      grid-column: 1 / 3;
+      margin-bottom: 0;
+
+      .request-form__list {
+        display: grid;
+        grid-template-columns: 570px 570px;
+        column-gap: 80px;
+      }
+    }
+
+    &--comment {
+      grid-column: 1 / 3;
+      margin-bottom: 0;
+
+      .request-form__group-name {
+        margin-bottom: 78px;
+      }
+    }
+
+    &--additional {
+      grid-column: 1 / 3;
+      margin-bottom: 0;
+
+      .request-form__list {
+        grid-template-columns: repeat(4, 250px);
+        column-gap: 73px;
+      }
+    }
+  }
+}
+
+.request-form__group-name {
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 1.08;
+  color: $color-text-secondary;
+  margin-bottom: 36px;
+  background-color: $basic-color;
+  box-shadow: -20px 0 $basic-color, 20px 0 $basic-color;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: $bright-color;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: 0;
+    transform: translate(0, 50%);
+    box-shadow: 100vw 0 $bright-color;
+  }
+
+  &--high::before {
+    @media (max-width: $mobile-width-only) {
+      top: 25%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 2.25rem;
+    line-height: 1;
+    box-shadow: -40px 0 $basic-color, 40px 0 $basic-color;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.request-form__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--fillable {
+    gap: 14px;
+
+    @media (min-width: $tablet-width) {
+      gap: 20px;
+    }
+  }
+
+  &--selectable {
+    gap: 13px;
+  }
+}
+
+.request-form__field {
+  display: grid;
+  align-items: center;
+  position: relative;
+
+  &--fillable {
+    grid-template-columns: max-content 1fr;
+    gap: 13px;
+  }
+
+  &--selectable {
+    grid-template-columns: max-content max-content;
+    gap: 15px;
+
+    @media (min-width: $tablet-width) {
+      gap: 20px;
+    }
+  }
+}
+
+.request-form__control {
+  cursor: pointer;
+
+  &::placeholder {
+    color: $color-text-primary;
+  }
+}
+
+
+.request-form__control[type="number"]::-webkit-outer-spin-button,
+.request-form__control[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.request-form__control[type="radio"]:disabled + .request-form__label {
+  opacity: 0.3;
+}
+
+.request-form__control[type="checkbox"]:disabled + .request-form__label {
+  opacity: 0.3;
+}
+
+.request-form__label {
+  font-size: 1rem;
+  line-height: 1.13;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+}
+
+.request-form__control-icon {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translate(0, -50%);
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: $black-50;
+  }
+
+  &--email {
+    mask: url("../img/icon-email.svg") no-repeat center / contain;
+  }
+
+  &--phone {
+    mask: url("../img/icon-phone.svg") no-repeat center / contain;
+  }
+}
+
+.request-form__control:focus + .request-form__control-icon::before {
+  background: $bright-color;
+}
+
+.request-form__button {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 400;
+  width: 280px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: 1;
+    width: 282px;
+    margin-bottom: 0;
+    margin-right: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-top: -9px;
+  }
+}
+
+.request-form__required-fields-info {
+  display: block;
+  font-family: $font-basic;
+  line-height: 1.14;
+  color: $color-text-secondary;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+    align-self: center;
+  }
+}

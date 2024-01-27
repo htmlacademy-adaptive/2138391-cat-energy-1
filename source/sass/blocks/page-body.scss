@@ -1,5 +1,9 @@
 .page-body {
-  font: $font-basic;
-  background-color: $color-background-1;
+  min-width: 320px;
+  font-family: $font-basic;
+  font-size: 0.88rem;
+  line-height: 1.28;
+  font-weight: 400;
+  background-color: $basic-color;
   color: $color-text-primary;
 }

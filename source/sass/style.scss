@@ -7,9 +7,28 @@
 @import "./fonts.scss";
 @import "./common.scss";
 
+
 // Блоки
 @import "./blocks/page-body.scss";
+@import "./blocks/button.scss";
 @import "./blocks/header.scss";
 @import "./blocks/navigation.scss";
+@import "./blocks/page-content.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/program.scss";
+@import "./blocks/program-card.scss";
+@import "./blocks/features.scss";
+@import "./blocks/example.scss";
+@import "./blocks/contacts.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/social.scss";
+@import "./blocks/program-request.scss";
+@import "./blocks/request-form.scss";
+@import "./blocks/input.scss";
+@import "./blocks/textarea.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/extra-catalog.scss";
+@import "./blocks/extra-product-card.scss";
