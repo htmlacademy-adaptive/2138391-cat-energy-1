@@ -16,7 +16,11 @@
       <div class="header__container container">
         <div class="header__wrapper header__wrapper--nojs">
           <a class="header__link header__link--image" href="index.html">
-            <img class="header__logo-image" src="img/logo-image.svg" width="33" height="38" alt="Логотип супер кот.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg">
+              <img class="header__logo-image" src="img/logo-image.svg" width="33" height="38" alt="Логотип супер кот.">
+            </picture>
           </a>
           <a class="header__link" href="index.html">
             <img class="header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">

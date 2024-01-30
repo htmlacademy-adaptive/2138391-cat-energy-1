@@ -11,8 +11,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }
 
@@ -68,6 +68,29 @@
 
 .product-card__image {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    &--small {
+      width: 162px;
+      height: 173px;
+    }
+
+    &--big {
+      width: 168px;
+      height: 200px;
+    }
+
+    &--big-diff {
+      height: 206px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--big {
+      width: 172px;
+      height: 196px;
+    }
+  }
 }
 
 .product-card__info {

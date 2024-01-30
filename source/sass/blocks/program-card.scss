@@ -40,7 +40,7 @@
       &::before {
         width: 200px;
         height: 211px;
-        background-image: url("../img/program-diet-image-tablet.svg");
+        background-size: 200px 211px;
         grid-row: 1 / 4;
         margin-right: 0;
         margin-left: 53px;
@@ -70,7 +70,7 @@
       &::before {
         width: 100px;
         height: 106px;
-        background-image: url("../img/program-diet-image-desktop.svg");
+        background-size: 100px 106px;
         grid-row: 1 / 2;
         margin-left: 0;
         margin-right: 62px;
@@ -83,7 +83,7 @@
       &::before {
         width: 134px;
         height: 100px;
-        background-image: url("../img/program-weight-image-desktop.svg");
+        background-size: 134px 100px;
         grid-row: 1 / 2;
         margin-left: 0;
         margin-right: 47px;

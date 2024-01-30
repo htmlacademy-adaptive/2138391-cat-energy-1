@@ -98,22 +98,7 @@
       width: 80px;
       height: 80px;
       margin-bottom: 31px;
-    }
-
-    &--healthy::before {
-      background-image: url("../img/icon-leaf-size-m.svg");
-    }
-
-    &--easy::before {
-      background-image: url("../img/icon-glass-bubbles-size-m.svg");
-    }
-
-    &--daily::before {
-      background-image: url("../img/icon-fork-knife-size-m.svg");
-    }
-
-    &--quickly::before {
-      background-image: url("../img/icon-clock-size-m.svg");
+      background-size: 80px 80px;
     }
 
     &::after {
