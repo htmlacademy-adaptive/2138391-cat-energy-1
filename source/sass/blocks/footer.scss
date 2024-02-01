@@ -31,35 +31,23 @@
   cursor: pointer;
 
   &:focus {
+    opacity: 0.8;
     outline: none;
   }
 
-  &::before {
-    content: "";
-    display: block;
-    width: 128px;
-    height: 24px;
-    mask: url("../img/footer-logo.svg") no-repeat center / contain;
-    background: $color-footer-logo-clickable;
+  &:hover {
+    opacity: 0.8;
   }
 
-  &:focus::before {
-    background: $color-footer-logo-focused;
-  }
-
-  &:hover::before {
-    background: $color-footer-logo-hover;
-  }
-
-  &:active::before {
-    background: $color-footer-logo-pressed;
+  &:active {
+    opacity: 0.6;
   }
 
   @media (min-width: $tablet-width) {
     width: 130px;
     justify-content: start;
     padding-bottom: 0;
-    margin-right: 105px;
+    margin-right: 106px;
     margin-bottom: 0;
     border: none;
   }
@@ -76,7 +64,7 @@
   border-bottom: 1px solid $gray-400;
 
   @media (min-width: $tablet-width) {
-    width: 255px;
+    width: 240px;
     padding-bottom: 0;
     margin-bottom: 0;
     border: none;
@@ -88,6 +76,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: $color-text-primary;
 
   &:focus {
     outline: none;
@@ -95,13 +86,6 @@
 
   &:active {
     opacity: 0.3;
-  }
-
-  &::before {
-    content: "HTML Academy";
-    font-size: 16px;
-    line-height: 20px;
-    color: $color-text-primary;
   }
 
   &::after {
@@ -123,10 +107,10 @@
 
   @media (min-width: $tablet-width) {
     width: 170px;
-    margin-left: 66px;
+    margin-left: 61px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 322px;
+    margin-left: 317px;
   }
 }

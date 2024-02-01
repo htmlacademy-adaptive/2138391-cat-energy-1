@@ -1,38 +1,30 @@
 .contacts {
-  position: relative;
-
   &--colorful {
     background-color: $light-color;
   }
 }
 
 .contacts__container {
-  padding: 26px 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 60px 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 565px;
-    padding-left: 80px;
-    padding-right: 78px;
-    position: absolute;
-    top: 95px;
-    left: 110px;
-    background-color: $basic-color;
-  }
+  position: relative;
 }
 
 .contacts__wrapper {
+  padding: 26px 0;
   display: flex;
   gap: 18px;
 
   @media (min-width: $tablet-width) {
+    padding: 60px 40px;
     gap: 308px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 565px;
+    padding: 60px 78px 60px 80px;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    background-color: $basic-color;
     gap: 87px;
   }
 }
