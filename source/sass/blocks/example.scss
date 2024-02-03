@@ -11,17 +11,14 @@
 }
 
 .example__container {
-  padding-top: 25px;
-  padding-bottom: 40px;
+  padding: 25px 0 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
-    padding-bottom: 101px;
+    padding: 45px 0 101px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
-    padding-bottom: 75px;
+    padding: 0 0 75px;
     display: grid;
     grid-template-columns: 433px 560px;
     column-gap: 227px;
@@ -34,34 +31,32 @@
   line-height: 1.11;
   font-weight: 400;
   color: $color-text-secondary;
-  margin-top: 0;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 3.75rem;
     line-height: 1;
-    margin-bottom: 60px;
+    margin: 0 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
+    margin: 0 0 146px;
   }
 }
 
 .example__description {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 55px;
+    margin: 0 0 55px;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    margin-bottom: 69px;
+    margin: 0 0 69px;
   }
 }
 
@@ -71,14 +66,13 @@
   column-gap: 32px;
   row-gap: 20px;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     gap: 43px;
-    margin-bottom: 99px;
+    margin: 0 0 99px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,7 +82,7 @@
     grid-template-columns: 162px 162px;
     column-gap: 42px;
     row-gap: 60px;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -112,7 +106,7 @@
       flex-direction: column;
       gap: 9px;
       width: 174px;
-      margin-left: 124px;
+      margin: 0 0 0 124px;
       align-items: end;
     }
   }
@@ -140,7 +134,7 @@
     line-height: 1;
     font-weight: 400;
     text-transform: lowercase;
-    margin-top: -8px;
+    margin: -8px 0 0;
     padding: 0 16px;
     background-color: $gray-50;
     justify-self: center;
@@ -173,7 +167,7 @@
   font-family: $font-secondary;
   line-height: 1.43;
   color: $black-200;
-  margin-left: 0;
+  margin: 0;
   flex-shrink: 0;
 
   &--decorated {
@@ -182,8 +176,7 @@
     font-weight: 400;
     border: 1px solid $gray-500;
     border-radius: 4px;
-    padding-top: 14px;
-    padding-bottom: 18px;
+    padding: 14px 0 18px;
   }
 
   @media (min-width: $tablet-width) {
@@ -193,8 +186,7 @@
     &--decorated {
       font-size: 1.88rem;
       line-height: 1.23;
-      padding-top: 15px;
-      padding-bottom: 20px;
+      padding: 15px 0 20px;
     }
   }
 }
