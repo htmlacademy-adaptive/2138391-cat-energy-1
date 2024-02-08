@@ -30,6 +30,8 @@
   @include list-reset;
 
   @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $gray-200;
+
     &--closed {
       display: none;
     }
@@ -55,21 +57,9 @@
   justify-content: center;
   border-bottom: 1px solid $gray-200;
 
-  &:first-child {
-    border-top: 1px solid $gray-200;
-  }
-
-  &:last-child {
-    border-bottom: none;
-  }
-
   @media (min-width: $tablet-width) {
     position: relative;
     border: none;
-
-    &:first-child {
-      border: none;
-    }
 
     &--current::before {
       content: "";
