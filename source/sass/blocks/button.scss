@@ -6,10 +6,6 @@
   text-align: center;
   cursor: pointer;
 
-  &:focus {
-    outline: 1px solid $color-border-btn-focused;
-  }
-
   &--primary {
     color: $color-text-tertiary;
     background-color: $color-bg-btn-primary-clickable;

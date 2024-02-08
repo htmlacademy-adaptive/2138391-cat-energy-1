@@ -29,7 +29,6 @@
 
   &:focus {
     opacity: 0.8;
-    outline: none;
   }
 
   &:hover {
@@ -75,10 +74,6 @@
   font-size: 1rem;
   line-height: 1.25;
   color: $color-text-primary;
-
-  &:focus {
-    outline: none;
-  }
 
   &:active {
     opacity: 0.3;

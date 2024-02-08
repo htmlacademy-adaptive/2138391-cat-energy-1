@@ -7,10 +7,6 @@
   border-color: $color-border-textarea-clickable;
   resize: none;
 
-  &:focus {
-    outline: 1px solid $color-border-textarea-focused;
-  }
-
   &:hover {
     border-color: $color-border-textarea-hover;
   }

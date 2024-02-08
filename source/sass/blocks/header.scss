@@ -45,7 +45,6 @@
 .header__link {
   &:focus {
     opacity: 0.8;
-    outline: none;
   }
 
   &:hover {
@@ -101,10 +100,6 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
 
   &--closed::before {
     content: "";
