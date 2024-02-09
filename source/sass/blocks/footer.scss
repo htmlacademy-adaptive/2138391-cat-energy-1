@@ -84,7 +84,7 @@
     display: block;
     width: 27px;
     height: 34px;
-    mask: url("../img/academy-logo.svg") no-repeat center / contain;
+    mask: url("../img/sprite.svg#academy-logo") no-repeat center / contain;
     background: $color-partner-logo-clickable;
   }
 

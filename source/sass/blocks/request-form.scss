@@ -284,11 +284,11 @@
   }
 
   &--email {
-    mask: url("../img/icon-email.svg") no-repeat center / contain;
+    mask: url("../img/sprite.svg#email-icon") no-repeat center / contain;
   }
 
   &--phone {
-    mask: url("../img/icon-phone.svg") no-repeat center / contain;
+    mask: url("../img/sprite.svg#phone-icon") no-repeat center / contain;
   }
 }
 

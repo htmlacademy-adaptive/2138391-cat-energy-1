@@ -12,7 +12,7 @@
       display: block;
       width: 50px;
       height: 53px;
-      background-image: url("../img/program-diet-image.svg");
+      background-image: url("../img/sprite.svg#program-diet");
       background-repeat: no-repeat;
       margin: 0 20px 0 0;
     }
@@ -25,7 +25,7 @@
       content: "";
       width: 67px;
       height: 50px;
-      background-image: url("../img/program-weight-image.svg");
+      background-image: url("../img/sprite.svg#program-weight");
       background-repeat: no-repeat;
       margin: 0 11px 0 0;
     }
@@ -40,7 +40,6 @@
       &::before {
         width: 200px;
         height: 211px;
-        background-size: 200px 211px;
         grid-row: 1 / 4;
         margin: 0 0 0 53px;
       }
@@ -52,7 +51,6 @@
       &::before {
         width: 268px;
         height: 200px;
-        background-image: url("../img/program-weight-image-tablet.svg");
         grid-row: 1 / 4;
         margin: 0 0 0 19px;
       }
@@ -68,7 +66,6 @@
       &::before {
         width: 100px;
         height: 106px;
-        background-size: 100px 106px;
         grid-row: 1 / 2;
         margin: 0 62px 0 0;
       }
@@ -80,7 +77,6 @@
       &::before {
         width: 134px;
         height: 100px;
-        background-size: 134px 100px;
         grid-row: 1 / 2;
         margin: 0 47px 0 0;
       }
@@ -157,9 +153,9 @@
   &::after {
     content: "";
     display: block;
-    width: 32px;
-    height: 10px;
-    background-image: url("../img/icon-arrow.svg");
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/sprite.svg#arrow-icon");
     background-repeat: no-repeat;
   }
 
@@ -168,11 +164,11 @@
   }
 
   &:focus::after {
-    background-image: url("../img/icon-arrow-long.svg");
+    width: 32px;
   }
 
   &:hover::after {
-    background-image: url("../img/icon-arrow-long.svg");
+    width: 32px;
   }
 
   @media (min-width: $tablet-width) {

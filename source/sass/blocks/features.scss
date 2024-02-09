@@ -70,19 +70,23 @@
   }
 
   &--healthy::before {
-    background-image: url("../img/icon-leaf.svg");
+    background-image: url("../img/sprite.svg#leaf-icon");
+    background-size: 30px 32px;
   }
 
   &--easy::before {
-    background-image: url("../img/icon-glass-bubbles.svg");
+    background-image: url("../img/sprite.svg#glass-bubbles-icon");
+    background-size: 26px 29px;
   }
 
   &--daily::before {
-    background-image: url("../img/icon-fork-knife.svg");
+    background-image: url("../img/sprite.svg#fork-knife-icon");
+    background-size: 25px 30px;
   }
 
   &--quickly::before {
-    background-image: url("../img/icon-clock.svg");
+    background-image: url("../img/sprite.svg#clock-icon");
+    background-size: 26px 32px;
   }
 
   @media (min-width: $tablet-width) {

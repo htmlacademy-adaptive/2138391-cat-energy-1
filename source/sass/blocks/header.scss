@@ -106,7 +106,7 @@
     display: block;
     width: 24px;
     height: 24px;
-    mask: url("../img/burger.svg") no-repeat center / contain;
+    mask: url("../img/sprite.svg#burger-icon") no-repeat center / contain;
     background: $color-header-toggle-clickable;
   }
 
@@ -125,9 +125,9 @@
   &--opened::before {
     content: "";
     display: block;
-    width: 18px;
-    height: 18px;
-    mask: url("../img/icon-nav-opened.svg") no-repeat center / contain;
+    width: 20px;
+    height: 20px;
+    mask: url("../img/sprite.svg#x-icon") no-repeat center / contain;
     background: $color-header-toggle-clickable;
   }
 
