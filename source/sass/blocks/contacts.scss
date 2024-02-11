@@ -9,8 +9,9 @@
 }
 
 .contacts__wrapper {
-  padding: 26px 0;
+  padding: 10px 0;
   display: flex;
+  align-items: center;
   gap: 18px;
 
   @media (min-width: $tablet-width) {

@@ -50,6 +50,10 @@
           <h1 class="hero__title">Функциональное питание для котов</h1>
           <p class="hero__subtitle">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero-image-desktop@1x.webp 1x, img/hero-image-desktop@2x.webp 2x" width="552" height="499">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-image-tablet@1x.webp 1x, img/hero-image-tablet@2x.webp 2x" width="708" height="609">
+            <source type="image/webp" srcset="img/hero-image.webp 1x, img/hero-image@2x.webp 2x" width="280" height="270">
+
             <source media="(min-width: 1440px)" srcset="img/hero-image-desktop@1x.png 1x, img/hero-image-desktop@2x.png 2x" width="552" height="499">
             <source media="(min-width: 768px)" srcset="img/hero-image-tablet@1x.png 1x, img/hero-image-tablet@2x.png 2x" width="708" height="609">
             <img class="hero__image" src="img/hero-image.png" srcset="img/hero-image@2x.png 2x" width="280" height="270" alt="Упаковка Cat Energy с курицей">
@@ -114,15 +118,31 @@
               <dd class="example__stats-description">15 000 руб.</dd>
             </div>
           </dl>
-          <img class="example__slider" src="img/compare-slider.png" width="280" height="256" alt="Слайдер сравни кота">
-          <!-- <div class="example__slider">
+          <div class="example__slider">
             <div class="example__slide example__slide--left">
-              <img class="example__image" src="img/fat-cat-mobile.png" width="280" height="256" alt="Толстый кот">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/fat-cat-tablet@1x.png 1x, img/fat-cat-tablet@2x.png 2x" width="560" height="512">
+                <img class="example__image" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+              </picture>
             </div>
             <div class="example__slide example__slide--right">
-              <img class="example__image" src="img/thin-cat-mobile.png" width="280" height="256" alt="Худой кот">
-            </div> -->
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/thin-cat-tablet@1x.png 1x, img/thin-cat-tablet@2x.png 2x" width="560" height="512">
+                <img class="example__image" src="img/thin-cat-mobile.png" srcset="img/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+              </picture>
+            </div>
+            <button class="example__slider-button">
+              <span class="visually-hidden">Просмотр результата питания</span>
+              <svg viewBox="0 0 40 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" width="4" height="257.02" rx="2" fill="currentColor"/>
+                <rect x="1" y="110" width="38" height="38" rx="19" fill="white"/>
+                <rect x="1" y="110" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2"/>
+                <path d="M16 120L8 129L16 138V120Z" fill="currentColor"/>
+                <path d="M32 129L24 120V138L32 129Z" fill="currentColor"/>
+              </svg>
+            </button>
           </div>
+          <!-- <img class="example__slider" src="img/compare-slider.png" width="280" height="256" alt="Слайдер сравни кота"> -->
         </div>
       </section>
 

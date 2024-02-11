@@ -46,7 +46,7 @@
 }
 
 .hero__container {
-  padding: 27px 0 0;
+  padding: 26px 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 69px 0 0;
@@ -118,12 +118,14 @@
 
 .hero__button {
   font-family: inherit;
-  font-size: 1.25rem;
-  line-height: 1;
+  font-size: 0.88rem;
+  line-height: 1.29;
   width: 280px;
   padding: 10px;
 
   @media (min-width: $tablet-width) {
+    font-size: 1.25rem;
+    line-height: 1;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     padding: 14px 10px;
