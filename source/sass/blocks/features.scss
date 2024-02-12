@@ -8,11 +8,11 @@
   padding: 0 0 49px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 79px 47px 0;
+    padding: 0 79px 44px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 69px;
+    padding: 0 0 66px;
   }
 }
 
@@ -41,14 +41,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 129px;
+    column-gap: 136px;
     row-gap: 37px;
     counter-reset: number 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 250px);
-    column-gap: 73px;
+    column-gap: 75px;
     row-gap: 0;
   }
 }
@@ -92,7 +92,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     min-height: 280px;
-    padding: 40px 0 10px;
+    padding: 38px 0 10px;
     counter-increment: number;
     position: relative;
 
@@ -113,6 +113,10 @@
       top: 0;
       right: 0;
       z-index: -1;
+    }
+
+    &--healthy::after {
+      right: 22px;
     }
   }
 }

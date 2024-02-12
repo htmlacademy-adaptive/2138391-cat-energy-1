@@ -35,7 +35,7 @@
     grid-template-columns: 1fr auto;
 
     &--diet {
-      padding: 77px 63px 57px 52px;
+      padding: 80px 63px 63px 52px;
 
       &::before {
         width: 200px;
@@ -46,18 +46,19 @@
     }
 
     &--weight {
-      padding: 77px 29px 57px 52px;
+      padding: 77px 29px 65px 52px;
 
       &::before {
         width: 268px;
         height: 200px;
         grid-row: 1 / 4;
-        margin: 0 0 0 19px;
+        margin: 12px 0 0 19px;
       }
     }
   }
 
   @media (min-width: $desktop-width) {
+    width: 570px;
     grid-template-columns: auto 1fr;
 
     &--diet {
@@ -78,7 +79,7 @@
         width: 134px;
         height: 100px;
         grid-row: 1 / 2;
-        margin: 0 47px 0 0;
+        margin: 0 47px 0 -19px;
       }
     }
   }
@@ -123,7 +124,7 @@
   @media (min-width: $tablet-width) {
     font-size: 1rem;
     line-height: 1.5;
-    margin: 22px 0 52px;
+    margin: 22px 0 57px;
     grid-column: 1 / 2;
 
     &::after {
@@ -132,7 +133,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 39px 0 27px;
+    margin: 39px 0 33px;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
   }

@@ -10,11 +10,11 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding: 57px 0 55px;
+    padding: 58px 0 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 0;
+    padding: 69px 0;
   }
 }
 
@@ -43,12 +43,12 @@
     width: 130px;
     justify-content: start;
     padding: 0;
-    margin: 0 106px 0 0;
+    margin: 0 105px 0 0;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 362px 0 0;
+    margin: 0 360px 0 0;
   }
 }
 
@@ -98,10 +98,11 @@
 
   @media (min-width: $tablet-width) {
     width: 170px;
-    margin: 0 0 0 61px;
+    margin: 0 0 0 63px;
+    padding: 0 0 0 8px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 317px;
+    margin: 0 0 0 319px;
   }
 }
