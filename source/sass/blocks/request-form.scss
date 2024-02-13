@@ -16,12 +16,12 @@
   position: relative;
 
   &--personal-data {
-    margin: 0 0 24px;
+    margin: 0 0 22px;
   }
 
   &--target {
     padding: 22px 0 19px;
-    margin: 0 0 26px;
+    margin: 0 0 28px;
 
     &::before {
       content: "";
@@ -50,14 +50,26 @@
 
   &--feedback-data {
     margin: 0 0 24px;
+
+    .request-form__group-name {
+      margin: 0 0 31px;
+    }
   }
 
   &--comment {
     margin: 0 0 23px;
+
+    .request-form__group-name {
+      margin: 0 0 36px;
+    }
   }
 
   &--additional {
-    margin: 0 0 34px;
+    margin: 0 0 32px;
+
+    .request-form__group-name {
+      margin: 0 0 33px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -157,7 +169,7 @@
   font-size: 1.5rem;
   line-height: 1.08;
   color: $color-text-secondary;
-  margin-bottom: 36px;
+  padding: 0;
   background-color: $basic-color;
   box-shadow: -20px 0 $basic-color, 20px 0 $basic-color;
 
@@ -200,7 +212,7 @@
   list-style: none;
 
   &--fillable {
-    gap: 14px;
+    gap: 11px;
 
     @media (min-width: $tablet-width) {
       gap: 20px;
@@ -219,7 +231,7 @@
 
   &--fillable {
     grid-template-columns: max-content 1fr;
-    gap: 13px;
+    gap: 14px;
   }
 
   &--selectable {
@@ -302,8 +314,8 @@
   line-height: 1.25;
   font-weight: 400;
   width: 280px;
-  padding: 14px 10px;
-  margin: 0 0 21px;
+  padding: 10px;
+  margin: 0 0 18px;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
