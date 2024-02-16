@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0 17px;
+    padding: 15px 0;
     grid-template-columns: 245px 80px 285px 40px 245px;
     align-items: center;
   }
@@ -71,6 +71,10 @@
 
     .extra-product-card__info-name {
       text-align: start;
+    }
+
+    .extra-product-card__info-value {
+      text-align: center;
     }
   }
 }

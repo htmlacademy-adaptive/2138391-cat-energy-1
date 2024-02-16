@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 36px 40px;
+    padding: 11px 38px 40px;
   }
 }
 
@@ -35,7 +35,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 23px;
+    margin: 0 0 24px;
   }
 }
 
@@ -60,7 +60,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 12px;
+    margin: 0 0 10px;
   }
 }
 
@@ -117,6 +117,15 @@
       margin: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 7px;
+    margin: 0 0 5px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
 }
 
 .product-card__info-value {
@@ -140,6 +149,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 33px auto 0;
     width: 169px;
   }
 }
