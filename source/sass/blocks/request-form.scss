@@ -74,7 +74,7 @@
 
   @media (min-width: $tablet-width) {
     &--personal-data {
-      margin: 0 0 72px;
+      margin: 0 0 69px;
     }
 
     &--target {
@@ -95,12 +95,12 @@
       margin: 0 0 65px;
 
       .request-form__group-name {
-        margin: 0 0 76px;
+        margin: 0 0 72px;
       }
     }
 
     &--comment {
-      margin: 0 0 65px;
+      margin: 0 0 66px;
 
       .request-form__group-name {
         margin: 0 0 87px;
@@ -111,7 +111,7 @@
       margin: 0 0 54px;
 
       .request-form__group-name {
-        margin: 0 0 57px;
+        margin: 0 0 56px;
       }
 
       .request-form__list {
@@ -322,7 +322,8 @@
     font-size: 1.25rem;
     line-height: 1;
     width: 282px;
-    margin: 0 64px 0 0;
+    margin: 0 60px 0 0;
+    padding: 15px 10px 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -339,7 +340,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    display: inline;
+    display: inline-block;
     font-size: 1rem;
     line-height: 1;
   }
