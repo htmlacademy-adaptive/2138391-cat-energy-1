@@ -14,6 +14,11 @@
     border-color: $color-border-input-hover;
   }
 
+  &:invalid {
+    border-color: $error-color;
+  }
+
+
   @media (min-width: $tablet-width) {
     font-size: 1.25rem;
     line-height: 1;
