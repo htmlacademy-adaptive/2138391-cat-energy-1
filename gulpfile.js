@@ -8,10 +8,12 @@ import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
+import { stacksvg } from "gulp-stacksvg";
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
+
 
 
 // Styles
@@ -77,6 +79,13 @@ const svg = () => {
     .pipe(gulp.dest('build/img'));
 }
 
+const stack = () => {
+  return gulp.src('source/img/stack-image/*.svg')
+  .pipe(svgo())
+  .pipe(stacksvg({ output: `sprite` }))
+  .pipe(gulp.dest('build/img'));
+}
+
 //Copy
 
 const copy = (done) => {
@@ -108,8 +117,7 @@ const server = (done) => {
     },
     cors: true,
     notify: false,
-    ui: false,
-    browser: 'google chrome'
+    ui: false
   });
   done();
 }
@@ -140,6 +148,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
+    stack,
     createWebp
   ),
 );
@@ -155,6 +164,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
+    stack,
     createWebp
   ),
   gulp.series(
