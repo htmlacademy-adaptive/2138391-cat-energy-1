@@ -22,19 +22,19 @@
     background: $color-social-link-hover;
   }
 
-  &:active {
+  &:active::before {
     opacity: 0.3;
   }
 
-  &--vk {
+  &--vk::before {
     mask: url("../img/sprite.svg#vk-icon") no-repeat center / contain;
   }
 
-  &--youtube {
+  &--youtube::before {
     mask: url("../img/sprite.svg#youtube-icon") no-repeat center / contain;
   }
 
-  &--telegram {
+  &--telegram::before {
     mask: url("../img/sprite.svg#telegram-icon") no-repeat center / contain;
   }
 }

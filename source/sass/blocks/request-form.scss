@@ -250,12 +250,20 @@
   &::placeholder {
     color: $color-text-primary;
   }
-}
 
+  &::-moz-placeholder,
+  :-moz-placeholder {
+    opacity: 1;
+  }
+}
 
 .request-form__control[type="number"]::-webkit-outer-spin-button,
 .request-form__control[type="number"]::-webkit-inner-spin-button {
   appearance: none;
+}
+
+.request-form__control[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .request-form__control[type="radio"]:disabled + .request-form__label {
@@ -295,11 +303,11 @@
     background: $black-50;
   }
 
-  &--email {
+  &--email::before {
     mask: url("../img/sprite.svg#email-icon") no-repeat center / contain;
   }
 
-  &--phone {
+  &--phone::before {
     mask: url("../img/sprite.svg#phone-icon") no-repeat center / contain;
   }
 }
@@ -351,6 +359,8 @@
     display: inline-block;
     font-size: 1rem;
     line-height: 1;
+    position: relative;
+    bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {

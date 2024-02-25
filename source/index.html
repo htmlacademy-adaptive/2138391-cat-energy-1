@@ -121,12 +121,18 @@
           <div class="example__slider">
             <div class="example__slide example__slide--before">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/fat-cat-tablet@1x.webp 1x, img/fat-cat-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="img/fat-cat-mobile.webp 1x, img/fat-cat-mobile@2x.webp 2x" width="280" height="256">
+
                 <source media="(min-width: 768px)" srcset="img/fat-cat-tablet@1x.png 1x, img/fat-cat-tablet@2x.png 2x" width="560" height="512">
                 <img class="example__image" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
               </picture>
             </div>
             <div class="example__slide example__slide--after">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/thin-cat-tablet@1x.webp 1x, img/thin-cat-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="img/thin-cat-mobile.webp 1x, img/thin-cat-mobile@2x.webp 2x" width="280" height="256">
+
                 <source media="(min-width: 768px)" srcset="img/thin-cat-tablet@1x.png 1x, img/thin-cat-tablet@2x.png 2x" width="560" height="512">
                 <img class="example__image" src="img/thin-cat-mobile.png" srcset="img/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
               </picture>
@@ -152,7 +158,7 @@
             <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> <span>Санкт-Петербург</span> </address>
           </div>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=mymaps%3A4Iq6WtbrHHkK9hab1xfXVBgsAQQB6Fe9&amp;source=constructor" title="Мы на карте" width="280" height="362"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=mymaps%3A4Iq6WtbrHHkK9hab1xfXVBgsAQQB6Fe9&amp;source=constructor" title="Мы на карте" loading="lazy" width="280" height="362"></iframe>
       </section>
     </main>
 

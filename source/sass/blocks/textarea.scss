@@ -4,7 +4,7 @@
   line-height: 1.13;
   padding: 14px 14px 8px;
   text-transform: uppercase;
-  border-color: $color-border-textarea-clickable;
+  border: 1px solid $color-border-textarea-clickable;
   resize: none;
 
   &:hover {
