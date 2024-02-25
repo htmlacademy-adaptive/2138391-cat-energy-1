@@ -13,7 +13,6 @@
       width: 50px;
       height: 53px;
       background-image: url("../img/sprite.svg#program-diet");
-      background-size: 50px 53px;
       background-repeat: no-repeat;
       margin: 0 20px 0 0;
     }
@@ -41,7 +40,6 @@
       &::before {
         width: 200px;
         height: 211px;
-        background-size: 200px 211px;
         grid-row: 1 / 4;
         margin: 0 0 0 53px;
       }
@@ -69,7 +67,6 @@
       &::before {
         width: 100px;
         height: 106px;
-        background-size: 100% 100%;
         grid-row: 1 / 2;
         margin: 0 62px 0 0;
       }

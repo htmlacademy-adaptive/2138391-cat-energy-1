@@ -257,15 +257,6 @@
   }
 }
 
-.request-form__control[type="number"]::-webkit-outer-spin-button,
-.request-form__control[type="number"]::-webkit-inner-spin-button {
-  appearance: none;
-}
-
-.request-form__control[type="number"] {
-  -moz-appearance: textfield;
-}
-
 .request-form__control[type="radio"]:disabled + .request-form__label {
   opacity: 0.3;
 }
