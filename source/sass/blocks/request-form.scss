@@ -16,13 +16,12 @@
   position: relative;
 
   &--personal-data {
-    margin-bottom: 24px;
+    margin: 0 0 22px;
   }
 
   &--target {
-    padding-top: 22px;
-    padding-bottom: 19px;
-    margin-bottom: 26px;
+    padding: 22px 0 19px;
+    margin: 0 0 28px;
 
     &::before {
       content: "";
@@ -50,25 +49,37 @@
   }
 
   &--feedback-data {
-    margin-bottom: 24px;
+    margin: 0 0 24px;
+
+    .request-form__group-name {
+      margin: 0 0 31px;
+    }
   }
 
   &--comment {
-    margin-bottom: 23px;
+    margin: 0 0 23px;
+
+    .request-form__group-name {
+      margin: 0 0 36px;
+    }
   }
 
   &--additional {
-    margin-bottom: 34px;
+    margin: 0 0 32px;
+
+    .request-form__group-name {
+      margin: 0 0 33px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     &--personal-data {
-      margin-bottom: 72px;
+      margin: 0 0 69px;
     }
 
     &--target {
-      margin-bottom: 65px;
-      padding: 23px 27px 27px 27px;
+      margin: 0 0 65px;
+      padding: 23px 27px 27px;
       border: 1px solid $gray-300;
 
       &::before {
@@ -81,26 +92,26 @@
     }
 
     &--feedback-data {
-      margin-bottom: 65px;
+      margin: 0 0 65px;
 
       .request-form__group-name {
-        margin-bottom: 76px;
+        margin: 0 0 72px;
       }
     }
 
     &--comment {
-      margin-bottom: 65px;
+      margin: 0 0 66px;
 
       .request-form__group-name {
-        margin-bottom: 87px;
+        margin: 0 0 87px;
       }
     }
 
     &--additional {
-      margin-bottom: 54px;
+      margin: 0 0 54px;
 
       .request-form__group-name {
-        margin-bottom: 57px;
+        margin: 0 0 56px;
       }
 
       .request-form__list {
@@ -114,16 +125,16 @@
 
   @media (min-width: $desktop-width) {
     &--personal-data {
-      margin-bottom: 0;
+      margin: 0;
     }
 
     &--target {
-      margin-bottom: 0;
+      margin: 0;
     }
 
     &--feedback-data {
       grid-column: 1 / 3;
-      margin-bottom: 0;
+      margin: 0;
 
       .request-form__list {
         display: grid;
@@ -134,20 +145,20 @@
 
     &--comment {
       grid-column: 1 / 3;
-      margin-bottom: 0;
+      margin: 0;
 
       .request-form__group-name {
-        margin-bottom: 78px;
+        margin: 0 0 78px;
       }
     }
 
     &--additional {
       grid-column: 1 / 3;
-      margin-bottom: 0;
+      margin: 0;
 
       .request-form__list {
         grid-template-columns: repeat(4, 250px);
-        column-gap: 73px;
+        column-gap: 75px;
       }
     }
   }
@@ -158,7 +169,7 @@
   font-size: 1.5rem;
   line-height: 1.08;
   color: $color-text-secondary;
-  margin-bottom: 36px;
+  padding: 0;
   background-color: $basic-color;
   box-shadow: -20px 0 $basic-color, 20px 0 $basic-color;
 
@@ -201,7 +212,7 @@
   list-style: none;
 
   &--fillable {
-    gap: 14px;
+    gap: 11px;
 
     @media (min-width: $tablet-width) {
       gap: 20px;
@@ -220,7 +231,7 @@
 
   &--fillable {
     grid-template-columns: max-content 1fr;
-    gap: 13px;
+    gap: 14px;
   }
 
   &--selectable {
@@ -239,12 +250,11 @@
   &::placeholder {
     color: $color-text-primary;
   }
-}
 
-
-.request-form__control[type="number"]::-webkit-outer-spin-button,
-.request-form__control[type="number"]::-webkit-inner-spin-button {
-  appearance: none;
+  &::-moz-placeholder,
+  :-moz-placeholder {
+    opacity: 1;
+  }
 }
 
 .request-form__control[type="radio"]:disabled + .request-form__label {
@@ -284,17 +294,25 @@
     background: $black-50;
   }
 
-  &--email {
-    mask: url("../img/icon-email.svg") no-repeat center / contain;
+  &--email::before {
+    mask: url("../img/sprite.svg#email-icon") no-repeat center / contain;
   }
 
-  &--phone {
-    mask: url("../img/icon-phone.svg") no-repeat center / contain;
+  &--phone::before {
+    mask: url("../img/sprite.svg#phone-icon") no-repeat center / contain;
   }
 }
 
 .request-form__control:focus + .request-form__control-icon::before {
   background: $bright-color;
+}
+
+.request-form__control:invalid + .request-form__control-icon::before {
+  background-color: $error-color;
+}
+
+.request-form__control:valid + .request-form__control-icon::before {
+  background-color: $bright-color;
 }
 
 .request-form__button {
@@ -303,22 +321,21 @@
   line-height: 1.25;
   font-weight: 400;
   width: 280px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  margin-bottom: 21px;
+  padding: 10px;
+  margin: 0 0 18px;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
     font-size: 1.25rem;
     line-height: 1;
     width: 282px;
-    margin-bottom: 0;
-    margin-right: 64px;
+    margin: 0 60px 0 0;
+    padding: 15px 10px 16px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin-top: -9px;
+    margin: -9px 80px 0 0;
   }
 }
 
@@ -330,9 +347,11 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    display: inline;
+    display: inline-block;
     font-size: 1rem;
     line-height: 1;
+    position: relative;
+    bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {

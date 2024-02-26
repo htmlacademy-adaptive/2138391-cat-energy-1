@@ -4,14 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon-svg.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
     <header class="header">
       <div class="header__container container">
         <div class="header__wrapper header__wrapper--nojs">
           <a class="header__link header__link--image" href="index.html">
-            <img class="header__logo-image" src="img/logo-image.svg" width="33" height="38" alt="Логотип супер кот.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg" width="70" height="59">
+              <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg" width="60" height="50">
+              <img class="header__logo-image" src="img/logo-image.svg" width="33" height="38" alt="Логотип супер кот.">
+            </picture>
           </a>
           <a class="header__link" href="index.html">
             <img class="header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
@@ -37,7 +45,7 @@
     </header>
 
     <main class="page-content">
-      <section class="program-request">
+      <section class="program-request page-content__program-request">
         <div class="container program-request__container">
           <h1 class="program-request__title">Подбор программы</h1>
           <p class="program-request__description">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
@@ -54,13 +62,13 @@
                 <li class="request-form__list-item">
                   <label class="request-form__field request-form__field--fillable">
                     <span class="request-form__label">Вес (кг):<sup>*</sup></span>
-                    <input class="request-form__control input" type="number" name="request-form-weight" placeholder="7" min="3" max="100" required>
+                    <input class="request-form__control input" type="text" inputmode="numeric" pattern="\d*" name="request-form-weight" placeholder="7" required>
                   </label>
                 </li>
                 <li class="request-form__list-item">
                   <label class="request-form__field request-form__field--fillable">
                     <span class="request-form__label">Возраст (лет):</span>
-                    <input class="request-form__control input" type="number" name="request-form-age" placeholder="7" min="0" max="30">
+                    <input class="request-form__control input" type="text" inputmode="numeric" pattern="\d*" name="request-form-age" placeholder="7">
                   </label>
                 </li>
               </ul>
@@ -89,19 +97,19 @@
               </ul>
             </fieldset>
             <fieldset class="request-form__group request-form__group--feedback-data">
-              <legend class="request-form__group-name request-form__group-name--high">Контактные данные <br> (владельца кота)</legend>
+              <legend class="request-form__group-name request-form__group-name--high">Контактные данные&nbsp; <br> (владельца кота)</legend>
               <ul class="request-form__list request-form__list--fillable">
                 <li class="request-form__list-item">
                   <label class="request-form__field request-form__field--fillable">
                     <span class="request-form__label">E-mail:<sup>*</sup></span>
-                    <input class="request-form__control input input--decorated" type="email" name="request-form-mail" placeholder="kuklachev@gmail.com" required>
+                    <input class="request-form__control input" type="email" name="request-form-mail" placeholder="kuklachev@gmail.com" required>
                     <span class="request-form__control-icon request-form__control-icon--email"></span>
                   </label>
                 </li>
                 <li class="request-form__list-item">
                   <label class="request-form__field request-form__field--fillable">
                     <span class="request-form__label">Телефон:<sup>*</sup></span>
-                    <input class="request-form__control input input--decorated" type="tel" name="request-form-phone" placeholder="8 (960) 900-60-90" required>
+                    <input class="request-form__control input" type="tel" name="request-form-phone" placeholder="8 (960) 900-60-90" required>
                     <span class="request-form__control-icon request-form__control-icon--phone"></span>
                   </label>
                 </li>
@@ -153,18 +161,18 @@
         <div class="container contacts__container">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper">
-            <div class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</div>
+            <p class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
             <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> <span>Санкт-Петербург</span> </address>
           </div>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=mymaps%3A4Iq6WtbrHHkK9hab1xfXVBgsAQQB6Fe9&amp;source=constructor" title="Мы на карте" width="280" height="362"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=mymaps%3A4Iq6WtbrHHkK9hab1xfXVBgsAQQB6Fe9&amp;source=constructor" title="Мы на карте" width="280" height="362" loading="lazy"></iframe>
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer__container container">
         <a class="footer__logo" href="index.html">
-          <span class="visually-hidden">Логотип Cat Energy</span>
+          <img class="footer__logo-text" src="img/logo-text.svg" width="128" height="24" alt="Cat energy.">
         </a>
         <div class="footer__social social">
           <ul class="social__list">
@@ -185,9 +193,7 @@
             </li>
           </ul>
         </div>
-        <a class="footer__partner-logo" href="https://htmlacademy.ru">
-          <span class="visually-hidden">Логотип Html Academy</span>
-        </a>
+        <a class="footer__partner-logo" href="https://htmlacademy.ru">HTML Academy</a>
       </div>
     </footer>
     <script src="js/app.js"></script>

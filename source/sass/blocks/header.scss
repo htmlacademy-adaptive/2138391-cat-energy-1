@@ -10,17 +10,17 @@
 .header__container {
   display: flex;
   flex-direction: column;
-  padding-top: 13px;
+  padding: 13px 0 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 25px;
+    padding: 25px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 56px;
+    padding: 56px 0 0;
     justify-content: start;
   }
 }
@@ -29,11 +29,11 @@
   display: flex;
   width: 100%;
   align-items: center;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
 
   @media (min-width: $tablet-width) {
     width: 175px;
-    margin-bottom: 0;
+    margin: 0;
     justify-content: space-between;
   }
 
@@ -45,7 +45,6 @@
 .header__link {
   &:focus {
     opacity: 0.8;
-    outline: none;
   }
 
   &:hover {
@@ -57,10 +56,10 @@
   }
 
   &--image {
-    margin-right: 56px;
+    margin: 0 56px 0 0;
 
     @media (min-width: $tablet-width) {
-      margin-right: 0;
+      margin: 0;
     }
   }
 }
@@ -95,23 +94,17 @@
 .header__toggle {
   display: inline-block;
   padding: 0;
-  margin-left: 65px;
+  margin: 0 0 0 66px;
   border: none;
   background-color: transparent;
-  width: 24px;
-  height: 24px;
   cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
 
   &--closed::before {
     content: "";
     display: block;
     width: 24px;
     height: 24px;
-    mask: url("../img/burger.svg") no-repeat center / contain;
+    mask: url("../img/sprite.svg#burger-icon") no-repeat center / contain;
     background: $color-header-toggle-clickable;
   }
 
@@ -130,9 +123,9 @@
   &--opened::before {
     content: "";
     display: block;
-    width: 18px;
-    height: 18px;
-    mask: url("../img/icon-nav-opened.svg") no-repeat center / contain;
+    width: 24px;
+    height: 24px;
+    mask: url("../img/sprite.svg#x-icon") no-repeat center / contain;
     background: $color-header-toggle-clickable;
   }
 

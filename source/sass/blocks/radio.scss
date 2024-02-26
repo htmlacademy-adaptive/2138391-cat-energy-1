@@ -6,10 +6,10 @@
   height: 30px;
   border: 1px solid $color-border-radio-clickable;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &:focus {
-    outline: 1px solid $color-border-radio-focused;
-  }
 
   &:hover {
     border-color: $color-border-radio-hover;
@@ -22,10 +22,6 @@
   &:checked::before {
     content: "";
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 13px;
     height: 13px;
     background-color: $color-radio-active;

@@ -22,19 +22,19 @@
     background: $color-social-link-hover;
   }
 
-  &:active {
+  &:active::before {
     opacity: 0.3;
   }
 
-  &--vk {
-    mask: url("../img/vk-icon.svg") no-repeat center / contain;
+  &--vk::before {
+    mask: url("../img/sprite.svg#vk-icon") no-repeat center / contain;
   }
 
-  &--youtube {
-    mask: url("../img/youtube-icon.svg") no-repeat center / contain;
+  &--youtube::before {
+    mask: url("../img/sprite.svg#youtube-icon") no-repeat center / contain;
   }
 
-  &--telegram {
-    mask: url("../img/telegram-icon.svg") no-repeat center / contain;
+  &--telegram::before {
+    mask: url("../img/sprite.svg#telegram-icon") no-repeat center / contain;
   }
 }

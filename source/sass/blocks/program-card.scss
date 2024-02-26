@@ -5,29 +5,29 @@
   background-color: $light-color;
 
   &--diet {
-    padding: 21px 33px 18px 20px;
+    padding: 21px 32px 18px 20px;
 
     &::before {
       content: "";
       display: block;
       width: 50px;
       height: 53px;
-      background-image: url("../img/program-diet-image.svg");
+      background-image: url("../img/sprite.svg#program-diet");
       background-repeat: no-repeat;
-      margin-right: 20px;
+      margin: 0 20px 0 0;
     }
   }
 
   &--weight {
-    padding: 24px 33px 18px 20px;
+    padding: 27px 33px 18px 20px;
 
     &::before {
       content: "";
       width: 67px;
       height: 50px;
-      background-image: url("../img/program-weight-image.svg");
+      background-image: url("../img/sprite.svg#program-weight");
       background-repeat: no-repeat;
-      margin-right: 11px;
+      margin: 0 11px 0 -7px;
     }
   }
 
@@ -35,33 +35,30 @@
     grid-template-columns: 1fr auto;
 
     &--diet {
-      padding: 77px 63px 57px 52px;
+      padding: 80px 63px 63px 52px;
 
       &::before {
         width: 200px;
         height: 211px;
-        background-image: url("../img/program-diet-image-tablet.svg");
         grid-row: 1 / 4;
-        margin-right: 0;
-        margin-left: 53px;
+        margin: 0 0 0 53px;
       }
     }
 
     &--weight {
-      padding: 77px 29px 57px 52px;
+      padding: 77px 29px 65px 52px;
 
       &::before {
         width: 268px;
         height: 200px;
-        background-image: url("../img/program-weight-image-tablet.svg");
         grid-row: 1 / 4;
-        margin-right: 0;
-        margin-left: 19px;
+        margin: 12px 0 0 19px;
       }
     }
   }
 
   @media (min-width: $desktop-width) {
+    width: 570px;
     grid-template-columns: auto 1fr;
 
     &--diet {
@@ -70,10 +67,8 @@
       &::before {
         width: 100px;
         height: 106px;
-        background-image: url("../img/program-diet-image-desktop.svg");
         grid-row: 1 / 2;
-        margin-left: 0;
-        margin-right: 62px;
+        margin: 0 62px 0 0;
       }
     }
 
@@ -83,10 +78,8 @@
       &::before {
         width: 134px;
         height: 100px;
-        background-image: url("../img/program-weight-image-desktop.svg");
         grid-row: 1 / 2;
-        margin-left: 0;
-        margin-right: 47px;
+        margin: 0 47px 0 -19px;
       }
     }
   }
@@ -116,10 +109,8 @@
 }
 
 .program-card__description {
-  margin-top: 22px;
-  margin-bottom: 15px;
+  margin: 23px 0 18px;
   grid-column: 1 / 3;
-
 
   &::after {
     content: "";
@@ -127,14 +118,13 @@
     width: 240px;
     height: 1px;
     background-color: $gray-400;
-    margin-top: 23px;
+    margin: 23px 0 0;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 1rem;
     line-height: 1.5;
-    margin-top: 24px;
-    margin-bottom: 52px;
+    margin: 22px 0 57px;
     grid-column: 1 / 2;
 
     &::after {
@@ -143,8 +133,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 39px;
-    margin-bottom: 27px;
+    margin: 39px 0 33px;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
   }
@@ -164,14 +153,10 @@
   &::after {
     content: "";
     display: block;
-    width: 32px;
-    height: 10px;
-    background-image: url("../img/icon-arrow.svg");
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/sprite.svg#arrow-icon");
     background-repeat: no-repeat;
-  }
-
-  &:focus {
-    outline: none;
   }
 
   &:active {
@@ -179,11 +164,11 @@
   }
 
   &:focus::after {
-    background-image: url("../img/icon-arrow-long.svg");
+    width: 32px;
   }
 
   &:hover::after {
-    background-image: url("../img/icon-arrow-long.svg");
+    width: 32px;
   }
 
   @media (min-width: $tablet-width) {

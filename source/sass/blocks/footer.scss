@@ -6,18 +6,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-top: 57px;
-    padding-bottom: 55px;
+    padding: 58px 0 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 66px;
-    padding-bottom: 66px;
+    padding: 69px 0;
   }
 }
 
@@ -25,60 +22,46 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding: 0 0 20px;
+  margin: 0 0 20px;
   border-bottom: 1px solid $gray-400;
   cursor: pointer;
 
   &:focus {
-    outline: none;
+    opacity: 0.8;
   }
 
-  &::before {
-    content: "";
-    display: block;
-    width: 128px;
-    height: 24px;
-    mask: url("../img/footer-logo.svg") no-repeat center / contain;
-    background: $color-footer-logo-clickable;
+  &:hover {
+    opacity: 0.8;
   }
 
-  &:focus::before {
-    background: $color-footer-logo-focused;
-  }
-
-  &:hover::before {
-    background: $color-footer-logo-hover;
-  }
-
-  &:active::before {
-    background: $color-footer-logo-pressed;
+  &:active {
+    opacity: 0.6;
   }
 
   @media (min-width: $tablet-width) {
     width: 130px;
     justify-content: start;
-    padding-bottom: 0;
-    margin-right: 105px;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0 105px 0 0;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 362px;
+    margin: 0 360px 0 0;
   }
 }
 
 .footer__social {
   width: 100%;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding: 0 0 20px;
+  margin: 0 0 20px;
   border-bottom: 1px solid $gray-400;
 
   @media (min-width: $tablet-width) {
-    width: 255px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    width: 240px;
+    padding: 0;
+    margin: 0;
     border: none;
   }
 }
@@ -88,20 +71,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  &:focus {
-    outline: none;
-  }
+  font-size: 1rem;
+  line-height: 1.25;
+  color: $color-text-primary;
 
   &:active {
     opacity: 0.3;
-  }
-
-  &::before {
-    content: "HTML Academy";
-    font-size: 16px;
-    line-height: 20px;
-    color: $color-text-primary;
   }
 
   &::after {
@@ -109,7 +84,7 @@
     display: block;
     width: 27px;
     height: 34px;
-    mask: url("../img/academy-logo.svg") no-repeat center / contain;
+    mask: url("../img/sprite.svg#academy-logo") no-repeat center / contain;
     background: $color-partner-logo-clickable;
   }
 
@@ -123,10 +98,11 @@
 
   @media (min-width: $tablet-width) {
     width: 170px;
-    margin-left: 66px;
+    margin: 0 0 0 63px;
+    padding: 0 0 0 8px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 322px;
+    margin: 0 0 0 319px;
   }
 }

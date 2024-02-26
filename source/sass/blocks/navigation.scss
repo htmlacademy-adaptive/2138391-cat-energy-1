@@ -17,7 +17,7 @@
 
   @media (min-width: $desktop-width) {
     width: 885px;
-    margin-left: 131px;
+    margin: 0 0 0 131px;
     background-color: transparent;
   }
 }
@@ -30,6 +30,8 @@
   @include list-reset;
 
   @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $gray-200;
+
     &--closed {
       display: none;
     }
@@ -46,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 
@@ -55,21 +57,9 @@
   justify-content: center;
   border-bottom: 1px solid $gray-200;
 
-  &:first-child {
-    border-top: 1px solid $gray-200;
-  }
-
-  &:last-child {
-    border-bottom: none;
-  }
-
   @media (min-width: $tablet-width) {
     position: relative;
     border: none;
-
-    &:first-child {
-      border: none;
-    }
 
     &--current::before {
       content: "";
@@ -96,8 +86,7 @@
 
 .navigation__link {
   display: block;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding: 21px 0 24px;
   font-family: $font-secondary;
   font-size: 1.25rem;
   line-height: 1;
@@ -107,7 +96,6 @@
 
   &[href]:focus {
     opacity: 0.6;
-    outline: none;
   }
 
   &[href]:hover {

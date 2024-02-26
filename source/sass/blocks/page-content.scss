@@ -1,43 +1,59 @@
 .page-content__hero {
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
+    margin: 0 0 82px;
   }
 }
 
 .page-content__program {
-  margin-bottom: 20px;
+  margin: 0 0 23px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin: 0 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 78px;
+  }
+}
+
+.page-content__program-request {
+  margin: 0 0 33px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 80px;
   }
 }
 
 .page-content__catalog {
-  margin-bottom: 25px;
+  margin: 0 0 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin: 0 0 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
+    margin: 0 0 76px;
   }
 }
 
 .page-content__extra-catalog {
-  margin-bottom: 35px;
+  margin: 0 0 34px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
+    margin: 0 0 75px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 87px;
+    margin: 0 0 85px;
   }
 }
