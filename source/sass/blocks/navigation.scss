@@ -28,9 +28,20 @@
 
 .navigation__list {
   @include list-reset;
+  position: relative;
 
   @media (max-width: $mobile-width-only) {
-    border-top: 1px solid $gray-200;
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $gray-200;
+      box-shadow: 100vw 0 $gray-200;
+    }
 
     &--closed {
       display: none;
@@ -55,11 +66,24 @@
 .navigation__item {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid $gray-200;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $gray-200;
+    box-shadow: 100vw 0 $gray-200;
+  }
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    border: none;
+    &::after {
+      display: none;
+    }
 
     &--current::before {
       content: "";
@@ -86,7 +110,7 @@
 
 .navigation__link {
   display: block;
-  padding: 21px 0 24px;
+  padding: 22px 0 24px;
   font-family: $font-secondary;
   font-size: 1.25rem;
   line-height: 1;

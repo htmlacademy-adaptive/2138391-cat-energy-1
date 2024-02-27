@@ -242,19 +242,14 @@
       gap: 20px;
     }
   }
+
+  &--disabled {
+    opacity: 0.3;
+  }
 }
 
 .request-form__control {
   cursor: pointer;
-
-  &::placeholder {
-    color: $color-text-primary;
-  }
-
-  &::-moz-placeholder,
-  :-moz-placeholder {
-    opacity: 1;
-  }
 }
 
 .request-form__control[type="radio"]:disabled + .request-form__label {
