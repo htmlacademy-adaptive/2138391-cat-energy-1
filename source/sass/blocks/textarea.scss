@@ -12,6 +12,11 @@
     border-color: $color-border-textarea-hover;
   }
 
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 1.25rem;
     padding: 13px 20px 1px;
