@@ -7,16 +7,19 @@
   text-transform: uppercase;
   color: $color-text-primary;
 
+  &:invalid {
+    outline: 2px solid $error-color;
+    border-color: transparent;
+  }
+
   &:focus {
     outline: 2px solid $color-border-input-focused;
+    border-color: transparent;
   }
 
   &:hover {
-    border: 1px solid $color-border-input-hover;
-  }
-
-  &:invalid {
-    border: 2px solid $error-color;
+    outline: 1px solid $color-border-input-hover;
+    border-color: transparent;
   }
 
   &:disabled {

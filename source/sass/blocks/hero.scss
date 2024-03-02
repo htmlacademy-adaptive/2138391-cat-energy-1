@@ -3,6 +3,8 @@
   text-align: center;
   color: $color-text-tertiary;
   background-image: image-set(
+    url("../img/background-cat@2x.webp") 2x,
+    url("../img/background-cat.webp") 1x,
     url("../img/background-cat@2x.jpg") 2x,
     url("../img/background-cat.jpg") 1x
   );
@@ -39,7 +41,7 @@
       top: -115px;
       left: 50%;
       /* stylelint-disable */
-      background-image: linear-gradient(to right, rgba($bright-color, 0.85) 0, rgba($bright-color, 0.85) 100%), image-set(url("../img/background-cat-desktop@2x.jpg") 2x, url("../img/background-cat-desktop.jpg") 1x);
+      background-image: linear-gradient(to right, rgba($bright-color, 0.85) 0, rgba($bright-color, 0.85) 100%), image-set(url("../img/background-cat-desktop@2x.webp") 2x, url("../img/background-cat-desktop.webp") 1x, url("../img/background-cat-desktop@2x.jpg") 2x, url("../img/background-cat-desktop.jpg") 1x);
       /* stylelint-enable */
       background-color: $ship-gray;
       background-repeat: no-repeat;
