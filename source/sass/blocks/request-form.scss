@@ -298,10 +298,6 @@
   }
 }
 
-.request-form__control:focus + .request-form__control-icon::before {
-  background: $bright-color;
-}
-
 .request-form__control:invalid + .request-form__control-icon::before {
   background-color: $error-color;
 }
@@ -309,6 +305,15 @@
 .request-form__control:valid + .request-form__control-icon::before {
   background-color: $bright-color;
 }
+
+.request-form__control:focus + .request-form__control-icon::before {
+  background-color: $bright-color;
+}
+
+.request-form__control:hover + .request-form__control-icon::before {
+  background-color: $black-50;
+}
+
 
 .request-form__button {
   font-family: inherit;
