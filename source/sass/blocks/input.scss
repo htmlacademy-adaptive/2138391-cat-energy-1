@@ -5,19 +5,23 @@
   padding: 15px 35px 13px 15px;
   border: 1px solid $color-border-input-clickable;
   text-transform: uppercase;
+  color: $color-text-primary;
 
   &:focus {
-    outline: 1px solid $color-border-input-focused;
+    outline: 2px solid $color-border-input-focused;
   }
 
   &:hover {
-    border-color: $color-border-input-hover;
+    border: 1px solid $color-border-input-hover;
   }
 
   &:invalid {
-    border-color: $error-color;
+    border: 2px solid $error-color;
   }
 
+  &:disabled {
+    pointer-events: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 1.25rem;

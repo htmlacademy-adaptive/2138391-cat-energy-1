@@ -16,8 +16,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 885px;
-    margin: 0 0 0 131px;
+    width: 590px;
+    margin: 0 0 0 auto;
     background-color: transparent;
   }
 }
@@ -28,9 +28,20 @@
 
 .navigation__list {
   @include list-reset;
+  position: relative;
 
   @media (max-width: $mobile-width-only) {
-    border-top: 1px solid $gray-200;
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $gray-200;
+      box-shadow: 100vw 0 $gray-200;
+    }
 
     &--closed {
       display: none;
@@ -49,17 +60,31 @@
 
   @media (min-width: $desktop-width) {
     justify-content: flex-end;
+    gap: 34px;
   }
 }
 
 .navigation__item {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid $gray-200;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $gray-200;
+    box-shadow: 100vw 0 $gray-200;
+  }
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    border: none;
+    &::after {
+      display: none;
+    }
 
     &--current::before {
       content: "";
@@ -86,17 +111,12 @@
 
 .navigation__link {
   display: block;
-  padding: 21px 0 24px;
+  padding: 22px 0 24px;
   font-family: $font-secondary;
   font-size: 1.25rem;
   line-height: 1;
   color: $color-text-secondary;
   text-transform: uppercase;
-
-
-  &[href]:focus {
-    opacity: 0.6;
-  }
 
   &[href]:hover {
     opacity: 0.6;

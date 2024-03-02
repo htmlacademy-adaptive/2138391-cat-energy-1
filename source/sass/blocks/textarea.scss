@@ -4,11 +4,17 @@
   line-height: 1.13;
   padding: 14px 14px 8px;
   text-transform: uppercase;
+  color: $color-text-primary;
   border: 1px solid $color-border-textarea-clickable;
   resize: none;
 
   &:hover {
     border-color: $color-border-textarea-hover;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 
   @media (min-width: $tablet-width) {
