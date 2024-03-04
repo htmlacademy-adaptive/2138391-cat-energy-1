@@ -6,6 +6,7 @@
   border: 1px solid $color-border-input-clickable;
   text-transform: uppercase;
   color: $color-text-primary;
+  width: 100%;
 
   &:invalid {
     outline: 2px solid $error-color;
