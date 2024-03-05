@@ -8,6 +8,7 @@
   color: $color-text-primary;
   width: 100%;
 
+  //Состояние ошибки для обязательных поля
   &--error {
     border: 2px solid $error-color;
   }

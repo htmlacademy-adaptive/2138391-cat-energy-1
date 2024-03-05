@@ -298,6 +298,7 @@
   }
 }
 
+//Состояние ошибки для декоративной иконки обязательных полей
 .request-form__control--error + .request-form__control-icon::before {
   background-color: $error-color;
 }
