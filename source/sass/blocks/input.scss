@@ -8,9 +8,8 @@
   color: $color-text-primary;
   width: 100%;
 
-  &:invalid {
-    outline: 2px solid $error-color;
-    border-color: transparent;
+  &--error {
+    border: 2px solid $error-color;
   }
 
   &:focus {
