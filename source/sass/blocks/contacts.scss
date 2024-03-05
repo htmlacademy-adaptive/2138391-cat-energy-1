@@ -63,3 +63,37 @@
     text-align: start;
   }
 }
+
+.contacts__map {
+  border: none;
+  display: block;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.contacts__map-noscript {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.contacts--nojs .contacts__map {
+  display: none;
+}
+
+.contacts--nojs .contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
