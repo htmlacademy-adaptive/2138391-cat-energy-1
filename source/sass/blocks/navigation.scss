@@ -24,6 +24,17 @@
 
 .navigation--nojs .navigation__list {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    gap: 34px;
+  }
 }
 
 .navigation__list {

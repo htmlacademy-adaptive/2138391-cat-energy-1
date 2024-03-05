@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon-svg.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon-180.png">
@@ -102,7 +104,7 @@
                 <li class="request-form__list-item">
                   <label class="request-form__field request-form__field--fillable">
                     <span class="request-form__label">E-mail:<sup>*</sup></span>
-                    <input class="request-form__control input" type="email" name="request-form-mail" placeholder="kuklachev@gmail.com" required>
+                    <input class="request-form__control request-form__control input" type="email" name="request-form-mail" placeholder="kuklachev@gmail.com" required>
                     <span class="request-form__control-icon request-form__control-icon--email"></span>
                   </label>
                 </li>
@@ -157,7 +159,7 @@
         </div>
       </section>
 
-      <section class="contacts contacts--colorful">
+      <section class="contacts contacts--colorful contacts--nojs">
         <div class="container contacts__container">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper">
@@ -165,7 +167,18 @@
             <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> <span>Санкт-Петербург</span></address>
           </div>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=mymaps%3A4Iq6WtbrHHkK9hab1xfXVBgsAQQB6Fe9&amp;source=constructor" title="Мы на карте" width="280" height="362" loading="lazy"></iframe>
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=mymaps%3A4Iq6WtbrHHkK9hab1xfXVBgsAQQB6Fe9&amp;source=constructor" title="Мы на карте" loading="lazy" width="280" height="362"></iframe>
+        <noscript>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" width="320" height="362">
+
+            <source media="(min-width: 1440px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x" width="1440" height="400">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x" width="768" height="400">
+            <img class="contacts__map-noscript" src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" width="320" height="362" alt="Наше положение на карте.">
+          </picture>
+        </noscript>
       </section>
     </main>
 

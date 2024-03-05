@@ -18,16 +18,6 @@ img {
   object-fit: contain;
 }
 
-iframe {
-  border: none;
-  display: block;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    height: 400px;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -54,8 +44,4 @@ iframe {
     width: 1220px;
     margin: 0 auto;
   }
-}
-
-picture {
-  display: contents;
 }
